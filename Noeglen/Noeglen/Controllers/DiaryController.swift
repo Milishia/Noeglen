@@ -24,10 +24,10 @@ class DiaryController: UIViewController {
         var tempDiaries: [Diary] = []
         
         let diary1 = Diary(title: "Første dagbog", description: "Idag har jeg skrevet min første dagbog!", date: "23/10/2019")
-        let diary2 = Diary(title: "Anden dagbog", description: "Idag har jeg skrevet min anden dagbog!", date: "23/10/2019")
-        let diary3 = Diary(title: "Tredje dagbog", description: "Idag har jeg skrevet min tredje dagbog!", date: "23/10/2019")
-        let diary4 = Diary(title: "Fjerde dagbog", description: "Idag har jeg skrevet min fjerde dagbog!", date: "23/10/2019")
-        let diary5 = Diary(title: "Femte dagbog", description: "Idag har jeg skrevet min femte dagbog!", date: "23/10/2019")
+        let diary2 = Diary(title: "Anden dagbog", description: "Idag har jeg skrevet min anden dagbog!", date: "24/10/2019")
+        let diary3 = Diary(title: "Tredje dagbog", description: "Idag har jeg skrevet min tredje dagbog!", date: "25/10/2019")
+        let diary4 = Diary(title: "Fjerde dagbog", description: "Idag har jeg skrevet min fjerde dagbog!", date: "26/10/2019")
+        let diary5 = Diary(title: "Femte dagbog", description: "Idag har jeg skrevet min femte dagbog!", date: "27/10/2019")
         
         tempDiaries.append(diary1)
         tempDiaries.append(diary2)
