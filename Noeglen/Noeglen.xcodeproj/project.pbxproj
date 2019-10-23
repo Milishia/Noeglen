@@ -14,6 +14,9 @@
 		41A2FEDC233CC614000B4CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2FEDB233CC614000B4CE1 /* Assets.xcassets */; };
 		41A2FEDF233CC614000B4CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A2FEDD233CC614000B4CE1 /* LaunchScreen.storyboard */; };
 		41A2FEE7233CC673000B4CE1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41A2FEE6233CC673000B4CE1 /* .gitignore */; };
+		41FE8C25236054130097488C /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C24236054130097488C /* DiaryCell.swift */; };
+		41FE8C272360553C0097488C /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C262360553C0097488C /* Diary.swift */; };
+		41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2D23607C5D0097488C /* DiaryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		41A2FEDE233CC614000B4CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A2FEE0233CC614000B4CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A2FEE6233CC673000B4CE1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		41FE8C24236054130097488C /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		41FE8C262360553C0097488C /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		41FE8C2D23607C5D0097488C /* DiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +65,26 @@
 		41A2FED1233CC613000B4CE1 /* Noeglen */ = {
 			isa = PBXGroup;
 			children = (
+				41FE8C2A236057F50097488C /* Controllers */,
 				41A2FED2233CC613000B4CE1 /* AppDelegate.swift */,
 				41A2FED4233CC613000B4CE1 /* SceneDelegate.swift */,
-				41A2FED6233CC613000B4CE1 /* ViewController.swift */,
+				41FE8C24236054130097488C /* DiaryCell.swift */,
+				41FE8C262360553C0097488C /* Diary.swift */,
 				41A2FED8233CC613000B4CE1 /* Main.storyboard */,
 				41A2FEDB233CC614000B4CE1 /* Assets.xcassets */,
 				41A2FEDD233CC614000B4CE1 /* LaunchScreen.storyboard */,
 				41A2FEE0233CC614000B4CE1 /* Info.plist */,
 			);
 			path = Noeglen;
+			sourceTree = "<group>";
+		};
+		41FE8C2A236057F50097488C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41A2FED6233CC613000B4CE1 /* ViewController.swift */,
+				41FE8C2D23607C5D0097488C /* DiaryController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A2FED7233CC613000B4CE1 /* ViewController.swift in Sources */,
+				41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */,
+				41FE8C272360553C0097488C /* Diary.swift in Sources */,
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,
 				41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */,
+				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

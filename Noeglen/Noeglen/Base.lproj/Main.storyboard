@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E02-SP-LT5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E02-SP-LT5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,8 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="dagbogButton" image="dagbog"/>
                                 <connections>
-                                    <action selector="dagbogButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4p-wa-ciB"/>
-                                    <segue destination="dZe-j3-vJq" kind="show" id="en7-9L-hBq"/>
+                                    <segue destination="dZe-j3-vJq" kind="show" id="j7r-4E-jBD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NØGLEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-a8-QMb">
@@ -146,7 +145,7 @@
         <!--Dagbog-->
         <scene sceneID="pQS-eh-tXo">
             <objects>
-                <viewController title="Dagbog" id="dZe-j3-vJq" sceneMemberID="viewController">
+                <viewController title="Dagbog" id="dZe-j3-vJq" customClass="DiaryController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gG1-Yb-CJ6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,14 +155,84 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" backgroundImage="arrow.left" catalog="system">
-                                    <color key="titleColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-6D-B6e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" id="sNH-Es-D6q" customClass="DiaryCell" customModule="Noeglen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sNH-Es-D6q" id="jFw-Fe-RAG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbl-bz-MFS">
+                                                    <rect key="frame" x="20" y="11" width="34" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Zuw-gI-zgF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/10/2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpz-4A-jdu">
+                                                    <rect key="frame" x="307" y="11" width="87" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="HPG-bf-4co"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beskrivelse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ4-hW-Y5d">
+                                                    <rect key="frame" x="20" y="48" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="vip-bJ-UH5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nbl-bz-MFS" firstAttribute="leading" secondItem="jFw-Fe-RAG" secondAttribute="leadingMargin" id="2Tp-W9-06w"/>
+                                                <constraint firstItem="jZ4-hW-Y5d" firstAttribute="leading" secondItem="jFw-Fe-RAG" secondAttribute="leadingMargin" id="6Ts-ms-bRv"/>
+                                                <constraint firstItem="dpz-4A-jdu" firstAttribute="top" secondItem="jFw-Fe-RAG" secondAttribute="topMargin" id="6fK-tU-T0R"/>
+                                                <constraint firstItem="dpz-4A-jdu" firstAttribute="trailing" secondItem="jFw-Fe-RAG" secondAttribute="trailingMargin" id="DUJ-aR-Ljz"/>
+                                                <constraint firstItem="jZ4-hW-Y5d" firstAttribute="bottom" secondItem="jFw-Fe-RAG" secondAttribute="bottomMargin" id="NdA-di-VqC"/>
+                                                <constraint firstItem="nbl-bz-MFS" firstAttribute="top" secondItem="jFw-Fe-RAG" secondAttribute="topMargin" id="YXm-Y6-sWL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jZ4-hW-Y5d" secondAttribute="trailing" id="tLl-dv-oPF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="diaryDateLabel" destination="dpz-4A-jdu" id="gP4-a2-aZE"/>
+                                            <outlet property="diaryDescriptionLabel" destination="jZ4-hW-Y5d" id="xwn-Bc-UuR"/>
+                                            <outlet property="diaryTitleLabel" destination="nbl-bz-MFS" id="RJm-A7-U2G"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dZe-j3-vJq" id="kh5-82-lvG"/>
+                                    <outlet property="delegate" destination="dZe-j3-vJq" id="Puu-qM-8s4"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.89411764705882346" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AaT-6D-B6e" firstAttribute="trailing" secondItem="pav-f6-pDG" secondAttribute="trailing" id="Lai-bO-3wO"/>
+                            <constraint firstItem="AaT-6D-B6e" firstAttribute="top" secondItem="gG1-Yb-CJ6" secondAttribute="top" id="M4B-QU-XqW"/>
+                            <constraint firstAttribute="bottom" secondItem="AaT-6D-B6e" secondAttribute="bottom" id="QG9-PT-6lm"/>
+                            <constraint firstItem="AaT-6D-B6e" firstAttribute="leading" secondItem="pav-f6-pDG" secondAttribute="leading" id="j3u-zW-v2r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pav-f6-pDG"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jsb-sz-FBR"/>
+                    <navigationItem key="navigationItem" title="Dagbog" id="jsb-sz-FBR"/>
+                    <connections>
+                        <outlet property="tableView" destination="AaT-6D-B6e" id="AEq-WB-ACN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yo2-me-e8m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,7 +346,7 @@
         <image name="dagbog" width="183" height="183"/>
         <image name="dagenshumoer" width="183" height="183"/>
         <image name="house" catalog="system" width="64" height="54"/>
-        <image name="map" catalog="system" width="64" height="58"/>
+        <image name="map" catalog="system" width="64" height="56"/>
         <image name="nyttigviden" width="183" height="183"/>
         <image name="oevelser" width="183" height="183"/>
         <image name="stressparameter" width="183" height="183"/>
