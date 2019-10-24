@@ -11,47 +11,41 @@ import UIKit
 class DiaryController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addDiaryTitleTextView: UITextField!
+    @IBOutlet weak var addDiaryDescriptionTextView: UITextView!
     
-    var diaries: [Diary] = []
-
+    var diaryTitle = ["Første dagbog", "Anden dagbog", "Tredje dagbog", "Fjerde dagbog", "Femte dagbog"]
+    var diaryDescription = ["Idag skrev jeg min første dagbog!", "Idag skrev jeg min anden dagbog!", "Idag skrev jeg min tredje dagbog!", "Idag skrev jeg min fjerde dagbog!", "Idag skrev jeg min femte dagbog!"]
+    var diaryDate = ["23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        diaries = createArray()
-    }
-    
-    func createArray() -> [Diary] {
-        var tempDiaries: [Diary] = []
-        
-        let diary1 = Diary(title: "Første dagbog", description: "Idag har jeg skrevet min første dagbog!", date: "23/10/2019")
-        let diary2 = Diary(title: "Anden dagbog", description: "Idag har jeg skrevet min anden dagbog!", date: "24/10/2019")
-        let diary3 = Diary(title: "Tredje dagbog", description: "Idag har jeg skrevet min tredje dagbog!", date: "25/10/2019")
-        let diary4 = Diary(title: "Fjerde dagbog", description: "Idag har jeg skrevet min fjerde dagbog!", date: "26/10/2019")
-        let diary5 = Diary(title: "Femte dagbog", description: "Idag har jeg skrevet min femte dagbog!", date: "27/10/2019")
-        
-        tempDiaries.append(diary1)
-        tempDiaries.append(diary2)
-        tempDiaries.append(diary3)
-        tempDiaries.append(diary4)
-        tempDiaries.append(diary5)
-        
-        return tempDiaries
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 }
 
 extension DiaryController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return diaries.count
+        return diaryTitle.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let diary = diaries[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryCell", for: indexPath) as! DiaryCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryCell") as! DiaryCell
-        
-        cell.setDiary(diary: diary)
+        cell.diaryTitleLabel.text = diaryTitle[indexPath.row]
+        cell.diaryDescriptionLabel.text = diaryDescription[indexPath.row]
+        cell.diaryDateLabel.text = diaryDate[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ShowDiaryController") as? ShowDiaryController
+        
+        vc?.diaryTitle = diaryTitle[indexPath.row]
+        vc?.diaryDescription = diaryDescription[indexPath.row]
+        vc?.diaryDate = diaryDate[indexPath.row]
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
