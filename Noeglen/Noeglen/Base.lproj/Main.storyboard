@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="videoforloeb"/>
                                 <connections>
-                                    <segue destination="7SK-6z-w27" kind="show" id="ouI-pK-sf7"/>
+                                    <segue destination="7SK-6z-w27" kind="show" id="P0W-nx-b0R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyM-F4-XTU">
@@ -409,14 +410,48 @@
         <!--Videoforløb-->
         <scene sceneID="Mwe-ra-gWa">
             <objects>
-                <viewController title="Videoforløb" id="7SK-6z-w27" sceneMemberID="viewController">
+                <viewController title="Videoforløb" id="7SK-6z-w27" customClass="VFViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atg-8b-BQ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="webView2" translatesAutoresizingMaskIntoConstraints="NO" id="NBH-47-8tO">
+                                <rect key="frame" x="87" y="405" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="webView3" translatesAutoresizingMaskIntoConstraints="NO" id="byj-ld-zgz">
+                                <rect key="frame" x="87" y="622" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="webView1" translatesAutoresizingMaskIntoConstraints="NO" id="0pn-g7-9Z4">
+                                <rect key="frame" x="87" y="199" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" red="0.89411764705882346" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="20S-PT-Bmn"/>
                     </view>
                     <navigationItem key="navigationItem" id="DRH-bS-gxH"/>
+                    <connections>
+                        <outlet property="webView1" destination="0pn-g7-9Z4" id="jzu-wu-rQb"/>
+                        <outlet property="webView2" destination="NBH-47-8tO" id="oQD-sP-Y1E"/>
+                        <outlet property="webView3" destination="byj-ld-zgz" id="L93-Gh-1fQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Mm-q6-p0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -441,18 +476,51 @@
         <!--Øvelser-->
         <scene sceneID="hJ3-pU-1V7">
             <objects>
-                <viewController title="Øvelser" id="u4k-iq-SZc" sceneMemberID="viewController">
+                <viewController title="Øvelser" id="u4k-iq-SZc" customClass="OevelserViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vhy-Ya-sRs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mqH-gT-MiM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4KY-Ki-ZJv">
+                                    <size key="itemSize" width="141" height="156"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cBl-gf-b3c">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jkz-Rg-wL5">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="141" height="156"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="0.89411764705882346" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="mqH-gT-MiM" secondAttribute="bottom" id="Vjz-dT-ji2"/>
+                            <constraint firstItem="mqH-gT-MiM" firstAttribute="top" secondItem="vhy-Ya-sRs" secondAttribute="topMargin" id="p2V-c3-eTo"/>
+                            <constraint firstItem="y6k-Rj-ePd" firstAttribute="trailing" secondItem="mqH-gT-MiM" secondAttribute="trailing" id="q0G-Y0-4Ig"/>
+                            <constraint firstItem="mqH-gT-MiM" firstAttribute="top" secondItem="vhy-Ya-sRs" secondAttribute="topMargin" id="tbT-3y-inK"/>
+                            <constraint firstItem="mqH-gT-MiM" firstAttribute="leading" secondItem="y6k-Rj-ePd" secondAttribute="leading" id="wn2-Yf-6KH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y6k-Rj-ePd"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nhc-U7-Gyu"/>
+                    <connections>
+                        <outlet property="collectionView" destination="mqH-gT-MiM" id="E3J-oX-n0p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36E-H0-vkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3235" y="-547"/>
+            <point key="canvasLocation" x="3234.7826086956525" y="-547.09821428571422"/>
         </scene>
         <!--Stressparameter-->
         <scene sceneID="4qi-CZ-nie">
