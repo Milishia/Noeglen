@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D66E62362F02A0069F180 /* StressBarometerController.swift */; };
 		41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2FED2233CC613000B4CE1 /* AppDelegate.swift */; };
 		41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2FED4233CC613000B4CE1 /* SceneDelegate.swift */; };
 		41A2FED7233CC613000B4CE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2FED6233CC613000B4CE1 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		412D66E62362F02A0069F180 /* StressBarometerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressBarometerController.swift; sourceTree = "<group>"; };
 		41A2FECF233CC613000B4CE1 /* Noeglen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noeglen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A2FED2233CC613000B4CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A2FED4233CC613000B4CE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */,
 				A17018D7236194AE0093953D /* VFViewController.swift */,
 				A17018DB236197AA0093953D /* OevelserViewController.swift */,
+				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,7 +120,6 @@
 				6AAABFA740927D0BA76E6732 /* Pods-Noeglen.debug.xcconfig */,
 				FE3EB42EFE71D0AE1FC154BC /* Pods-Noeglen.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +246,7 @@
 				A17018D8236194AE0093953D /* VFViewController.swift in Sources */,
 				41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */,
 				41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */,
+				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
 				A17018DC236197AA0093953D /* OevelserViewController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);

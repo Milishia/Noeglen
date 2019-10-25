@@ -208,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="356.52173913043481" y="-1262.2767857142856"/>
         </scene>
-        <!--Diary Controller-->
+        <!--View Controller-->
         <scene sceneID="68E-i4-3eu">
             <objects>
-                <viewController id="in9-ts-RdT" customClass="DiaryController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="in9-ts-RdT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFo-cd-Qw7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -525,18 +525,46 @@
         <!--Stressparameter-->
         <scene sceneID="4qi-CZ-nie">
             <objects>
-                <viewController title="Stressparameter" id="omT-4q-rtE" sceneMemberID="viewController">
+                <viewController title="Stressparameter" id="omT-4q-rtE" customClass="StressBarometerController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9uJ-dn-1kC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4g-nw-1k9" customClass="Slider" customModule="fluid_slider">
+                                <rect key="frame" x="20" y="423" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AAl-V4-46L"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angiv dit stress niveau" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-Xn-2fh">
+                                <rect key="frame" x="121" y="481" width="172" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qfa-6x-8U8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.89411764705882346" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ddN-Xn-2fh" firstAttribute="top" secondItem="F4g-nw-1k9" secondAttribute="bottom" constant="8" id="5n3-Ok-zi9"/>
+                            <constraint firstItem="F4g-nw-1k9" firstAttribute="centerY" secondItem="9uJ-dn-1kC" secondAttribute="centerY" id="Qmv-h6-hV1"/>
+                            <constraint firstItem="F4g-nw-1k9" firstAttribute="centerX" secondItem="9uJ-dn-1kC" secondAttribute="centerX" id="ZDl-DJ-mC2"/>
+                            <constraint firstItem="ddN-Xn-2fh" firstAttribute="centerX" secondItem="9uJ-dn-1kC" secondAttribute="centerX" id="bYI-c8-Byo"/>
+                            <constraint firstItem="F4g-nw-1k9" firstAttribute="leading" secondItem="9uJ-dn-1kC" secondAttribute="leadingMargin" id="xzq-BG-ixN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ahs-Iw-7UT"/>
                     </view>
                     <navigationItem key="navigationItem" id="dbF-pU-01V"/>
+                    <connections>
+                        <outlet property="stressSlider" destination="F4g-nw-1k9" id="pvb-FF-tZc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAP-fa-jc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3996" y="-547"/>
+            <point key="canvasLocation" x="3995.652173913044" y="-547.09821428571422"/>
         </scene>
         <!--Dagens humør-->
         <scene sceneID="r3q-rI-JMl">
