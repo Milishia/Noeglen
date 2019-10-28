@@ -1,0 +1,6 @@
+framework module Pods_Noeglen {
+  umbrella header "Pods-Noeglen-umbrella.h"
+
+  export *
+  module * { export * }
+}

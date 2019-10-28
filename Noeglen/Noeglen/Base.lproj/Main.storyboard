@@ -16,70 +16,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-hG-L6r">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-hG-L6r">
                                 <rect key="frame" x="204" y="180" width="190" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="videoforloeb"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h5F-hG-L6r" secondAttribute="height" multiplier="190:183" id="iY1-dz-U4L"/>
+                                </constraints>
+                                <state key="normal" image="videoforloeb"/>
                                 <connections>
                                     <segue destination="7SK-6z-w27" kind="show" id="P0W-nx-b0R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyM-F4-XTU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyM-F4-XTU">
                                 <rect key="frame" x="18" y="381" width="190" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="nyttigviden"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pyM-F4-XTU" secondAttribute="height" multiplier="190:183" id="bhr-gy-vsA"/>
+                                </constraints>
+                                <state key="normal" image="nyttigviden"/>
                                 <connections>
                                     <segue destination="fKo-FA-iUU" kind="show" id="Kal-eB-iB4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t3-NO-sh1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t3-NO-sh1">
                                 <rect key="frame" x="204" y="381" width="190" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="oevelser"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0t3-NO-sh1" secondAttribute="height" multiplier="190:183" id="VTX-4o-FOq"/>
+                                </constraints>
+                                <state key="normal" image="oevelser"/>
                                 <connections>
                                     <segue destination="u4k-iq-SZc" kind="show" id="BSu-OU-idh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkk-9h-vTv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkk-9h-vTv">
                                 <rect key="frame" x="20" y="579" width="190" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="stressparameter"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dkk-9h-vTv" secondAttribute="height" multiplier="190:183" id="y62-Ue-em8"/>
+                                </constraints>
+                                <state key="normal" image="stressparameter"/>
                                 <connections>
                                     <segue destination="omT-4q-rtE" kind="show" id="c3R-VJ-s0t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpw-no-QDh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpw-no-QDh">
                                 <rect key="frame" x="204" y="579" width="190" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="dagenshumoer"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rpw-no-QDh" secondAttribute="height" multiplier="190:183" id="pM3-W9-h7b"/>
+                                </constraints>
+                                <state key="normal" image="dagenshumoer"/>
                                 <connections>
                                     <segue destination="s31-rT-cbI" kind="show" id="MVW-rf-KyB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naq-GQ-bPK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naq-GQ-bPK">
                                 <rect key="frame" x="18" y="180" width="190" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="dagbogButton" image="dagbog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="naq-GQ-bPK" secondAttribute="height" multiplier="190:183" id="WWj-2G-MD9"/>
+                                </constraints>
+                                <state key="normal" image="dagbog"/>
                                 <connections>
                                     <segue destination="dZe-j3-vJq" kind="show" id="j7r-4E-jBD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NØGLEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-a8-QMb">
-                                <rect key="frame" x="139" y="88" width="137" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NØGLEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-a8-QMb">
+                                <rect key="frame" x="140.5" y="88" width="133.5" height="61"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vejen ud af stress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-fj-Ddk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vejen ud af stress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-fj-Ddk">
                                 <rect key="frame" x="149" y="147" width="116" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89411764709999997" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dkk-9h-vTv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Iz-jL-moX"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="2uA-4A-Dgy"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="top" secondItem="h5F-hG-L6r" secondAttribute="top" id="2up-cJ-236"/>
+                            <constraint firstItem="0t3-NO-sh1" firstAttribute="trailing" secondItem="Rpw-no-QDh" secondAttribute="trailing" id="3RI-ba-krf"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="leading" secondItem="0t3-NO-sh1" secondAttribute="leading" id="CVx-gA-NDT"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="baseline" secondItem="0t3-NO-sh1" secondAttribute="baseline" id="DCH-TD-UYj"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="firstBaseline" secondItem="h5F-hG-L6r" secondAttribute="firstBaseline" id="HcF-Dh-Ycj"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="baseline" secondItem="h5F-hG-L6r" secondAttribute="baseline" id="Jo6-Ww-Kt3"/>
+                            <constraint firstItem="FjT-a8-QMb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N35-ae-mqP"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="top" secondItem="0t3-NO-sh1" secondAttribute="top" id="XVg-Eb-NCl"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="trailing" secondItem="pyM-F4-XTU" secondAttribute="trailing" id="YfT-8u-pfh"/>
+                            <constraint firstItem="bWd-fj-Ddk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="ZhG-0L-H5C"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="top" secondItem="naq-GQ-bPK" secondAttribute="bottom" constant="18" id="bPG-E5-H1a"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="leading" secondItem="pyM-F4-XTU" secondAttribute="leading" id="ctI-TM-2zH"/>
+                            <constraint firstItem="FjT-a8-QMb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fQ3-Xn-bWt"/>
+                            <constraint firstItem="Dkk-9h-vTv" firstAttribute="top" secondItem="pyM-F4-XTU" secondAttribute="bottom" constant="15" id="ipD-4p-WZw"/>
+                            <constraint firstItem="Dkk-9h-vTv" firstAttribute="firstBaseline" secondItem="Rpw-no-QDh" secondAttribute="firstBaseline" id="iuf-Ci-DaI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="naq-GQ-bPK" secondAttribute="trailing" constant="206" id="n0M-I5-ebX"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="niT-3G-CTi"/>
+                            <constraint firstItem="Dkk-9h-vTv" firstAttribute="baseline" secondItem="Rpw-no-QDh" secondAttribute="baseline" id="pNT-By-ql0"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="firstBaseline" secondItem="0t3-NO-sh1" secondAttribute="firstBaseline" id="taf-0N-BtN"/>
+                            <constraint firstItem="bWd-fj-Ddk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u29-5n-BkR"/>
+                            <constraint firstItem="Dkk-9h-vTv" firstAttribute="top" secondItem="Rpw-no-QDh" secondAttribute="top" id="uJN-ej-xMs"/>
+                            <constraint firstItem="0t3-NO-sh1" firstAttribute="leading" secondItem="Rpw-no-QDh" secondAttribute="leading" id="wMd-kC-5MW"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="top" secondItem="bWd-fj-Ddk" secondAttribute="bottom" constant="5" id="zHq-bk-PdG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wep-vZ-Omf"/>
