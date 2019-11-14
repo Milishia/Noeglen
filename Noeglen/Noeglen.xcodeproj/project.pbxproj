@@ -22,6 +22,7 @@
 		7840A14894976B38B5377CBA /* Pods_Noeglen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB018419E15ECD56E3A82642 /* Pods_Noeglen.framework */; };
 		A17018D8236194AE0093953D /* VFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17018D7236194AE0093953D /* VFViewController.swift */; };
 		A17018DC236197AA0093953D /* OevelserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17018DB236197AA0093953D /* OevelserViewController.swift */; };
+		A1DC5CC9237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		6AAABFA740927D0BA76E6732 /* Pods-Noeglen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.debug.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.debug.xcconfig"; sourceTree = "<group>"; };
 		A17018D7236194AE0093953D /* VFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFViewController.swift; sourceTree = "<group>"; };
 		A17018DB236197AA0093953D /* OevelserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelserViewController.swift; sourceTree = "<group>"; };
+		A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB018419E15ECD56E3A82642 /* Pods_Noeglen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noeglen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3EB42EFE71D0AE1FC154BC /* Pods-Noeglen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.release.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				A17018D7236194AE0093953D /* VFViewController.swift */,
 				A17018DB236197AA0093953D /* OevelserViewController.swift */,
 				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
+				A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,
 				A17018D8236194AE0093953D /* VFViewController.swift in Sources */,
 				41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */,
+				A1DC5CC9237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift in Sources */,
 				41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
 				A17018DC236197AA0093953D /* OevelserViewController.swift in Sources */,
