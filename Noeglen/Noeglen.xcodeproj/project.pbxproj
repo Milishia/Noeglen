@@ -27,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		412D66E62362F02A0069F180 /* StressBarometerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressBarometerController.swift; sourceTree = "<group>"; };
+		417CB51C237D3CFA00CB225C /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		417CB51D237D3CFA00CB225C /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		41A2FECF233CC613000B4CE1 /* Noeglen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noeglen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A2FED2233CC613000B4CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A2FED4233CC613000B4CE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
 			);
 			mainGroup = 41A2FEC6233CC613000B4CE1;
 			productRefGroup = 41A2FED0233CC613000B4CE1 /* Products */;
@@ -263,6 +266,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				41A2FED9233CC613000B4CE1 /* Base */,
+				417CB51C237D3CFA00CB225C /* da */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -271,6 +275,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				41A2FEDE233CC614000B4CE1 /* Base */,
+				417CB51D237D3CFA00CB225C /* da */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -342,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
