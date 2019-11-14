@@ -1,0 +1,75 @@
+
+/* Class = "UIViewController"; title = "Videoforløb"; ObjectID = "7SK-6z-w27"; */
+"7SK-6z-w27.title" = "Videoforløb";
+
+/* Class = "UILabel"; text = "23/10/2019"; ObjectID = "Bmi-0l-wos"; */
+"Bmi-0l-wos.text" = "23/10/2019";
+
+/* Class = "UILabel"; text = "NØGLEN"; ObjectID = "FjT-a8-QMb"; */
+"FjT-a8-QMb.text" = "NØGLEN";
+
+/* Class = "UITabBarItem"; title = "STATISTIK"; ObjectID = "Isf-fz-j9P"; */
+"Isf-fz-j9P.title" = "STATISTIK";
+
+/* Class = "UILabel"; text = "Tilføj en titel til din dagbog"; ObjectID = "JNp-r4-WUr"; */
+"JNp-r4-WUr.text" = "Tilføj en titel til din dagbog";
+
+/* Class = "UITextField"; placeholder = "Tilføj titel"; ObjectID = "NPp-Ha-NYW"; */
+"NPp-Ha-NYW.placeholder" = "Tilføj titel";
+
+/* Class = "UITabBarItem"; title = "KORT"; ObjectID = "Oj0-nL-9aY"; */
+"Oj0-nL-9aY.title" = "KORT";
+
+/* Class = "UITabBarItem"; title = "HJEM"; ObjectID = "SP3-jS-2mv"; */
+"SP3-jS-2mv.title" = "HJEM";
+
+/* Class = "UILabel"; text = "Beskrivelse"; ObjectID = "Un5-ap-4Ne"; */
+"Un5-ap-4Ne.text" = "Beskrivelse";
+
+/* Class = "UILabel"; text = "Titel"; ObjectID = "VVc-TT-8JU"; */
+"VVc-TT-8JU.text" = "Titel";
+
+/* Class = "UILabel"; text = "Vejen ud af stress"; ObjectID = "bWd-fj-Ddk"; */
+"bWd-fj-Ddk.text" = "Vejen ud af stress";
+
+/* Class = "UIButton"; normalTitle = "Tilføj"; ObjectID = "cUX-VU-53O"; */
+"cUX-VU-53O.normalTitle" = "Tilføj";
+
+/* Class = "UIViewController"; title = "Dagbog"; ObjectID = "dZe-j3-vJq"; */
+"dZe-j3-vJq.title" = "Dagbog";
+
+/* Class = "UILabel"; text = "Angiv dit stress niveau"; ObjectID = "ddN-Xn-2fh"; */
+"ddN-Xn-2fh.text" = "Angiv dit stress niveau";
+
+/* Class = "UILabel"; text = "23/10/2019"; ObjectID = "dpz-4A-jdu"; */
+"dpz-4A-jdu.text" = "23/10/2019";
+
+/* Class = "UIViewController"; title = "Nyttig viden"; ObjectID = "fKo-FA-iUU"; */
+"fKo-FA-iUU.title" = "Nyttig viden";
+
+/* Class = "UILabel"; text = "Beskrivelse"; ObjectID = "jZ4-hW-Y5d"; */
+"jZ4-hW-Y5d.text" = "Beskrivelse";
+
+/* Class = "UINavigationItem"; title = "Dagbog"; ObjectID = "jsb-sz-FBR"; */
+"jsb-sz-FBR.title" = "Dagbog";
+
+/* Class = "UIViewController"; title = "Dagbog Side"; ObjectID = "kB6-Lb-qwX"; */
+"kB6-Lb-qwX.title" = "Dagbog Side";
+
+/* Class = "UILabel"; text = "Titel"; ObjectID = "nbl-bz-MFS"; */
+"nbl-bz-MFS.text" = "Titel";
+
+/* Class = "UIViewController"; title = "Stressparameter"; ObjectID = "omT-4q-rtE"; */
+"omT-4q-rtE.title" = "Stressparameter";
+
+/* Class = "UIViewController"; title = "Dagens humør"; ObjectID = "s31-rT-cbI"; */
+"s31-rT-cbI.title" = "Dagens humør";
+
+/* Class = "UIViewController"; title = "Øvelser"; ObjectID = "u4k-iq-SZc"; */
+"u4k-iq-SZc.title" = "Øvelser";
+
+/* Class = "UILabel"; text = "Tilføj en tekst"; ObjectID = "wtu-Mk-paw"; */
+"wtu-Mk-paw.text" = "Tilføj en tekst";
+
+/* Class = "UITextView"; text = "Skriv din tekst her..."; ObjectID = "wxs-iF-Edw"; */
+"wxs-iF-Edw.text" = "Skriv din tekst her...";
