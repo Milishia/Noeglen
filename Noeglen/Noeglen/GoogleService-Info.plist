@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>918557693001-k3rvg5trijlmds0ul8mi7emcbsph1im9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.918557693001-k3rvg5trijlmds0ul8mi7emcbsph1im9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAyQk9XDJvFiF7dg5Xd7UoY2SPPEhfEx2w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>918557693001</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.carlankjaer.Noeglen</string>
+	<key>PROJECT_ID</key>
+	<string>noeglen-9c644</string>
+	<key>STORAGE_BUCKET</key>
+	<string>noeglen-9c644.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:918557693001:ios:b7f4e9783f9c3786571b98</string>
+	<key>DATABASE_URL</key>
+	<string>https://noeglen-9c644.firebaseio.com</string>
+</dict>
+</plist>
