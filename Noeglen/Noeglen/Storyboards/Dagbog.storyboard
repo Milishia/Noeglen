@@ -214,6 +214,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taz-vn-bft">
                                 <rect key="frame" x="360" y="758" width="34" height="30"/>
                                 <state key="normal" title="Tilføj"/>
+                                <connections>
+                                    <action selector="addDiaryButton:" destination="dr6-EC-bZb" eventType="touchUpInside" id="jJU-QF-dYA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -235,6 +238,10 @@
                         <viewLayoutGuide key="safeArea" id="7Cp-2c-mgG"/>
                     </view>
                     <navigationItem key="navigationItem" id="0eO-cr-TnX"/>
+                    <connections>
+                        <outlet property="addDiaryDescriptionTextView" destination="58q-VR-CJJ" id="WSm-wS-bJu"/>
+                        <outlet property="addDiaryTitleTextView" destination="CqL-56-85V" id="yju-XF-mGZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyk-4j-TwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
