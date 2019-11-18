@@ -11,6 +11,7 @@ import fluid_slider
 
 class StressBarometerController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var stressSlider: Slider!
     
     override func viewDidLoad() {
@@ -23,9 +24,11 @@ class StressBarometerController: UIViewController {
             let string = formatter.string(from: (fraction * 10) as NSNumber) ?? ""
             return NSAttributedString(string: string)
         }
-        
-        stressSlider.setMinimumLabelAttributedText(NSAttributedString(string: "0"))
-        stressSlider.setMaximumLabelAttributedText(NSAttributedString(string: "10"))
+        stressSlider.setMinimumImage(UIImage(named: "sad"))
+        stressSlider.setMaximumImage(UIImage(named: "happy"))
+        stressSlider.imagesColor = UIColor.white.withAlphaComponent(0.8)
+        stressSlider.setMinimumLabelAttributedText(NSAttributedString(string: ""))
+        stressSlider.setMaximumLabelAttributedText(NSAttributedString(string: ""))
         stressSlider.fraction = 0.5
         stressSlider.shadowOffset = CGSize(width: 0, height: 10)
         stressSlider.shadowBlur = 5

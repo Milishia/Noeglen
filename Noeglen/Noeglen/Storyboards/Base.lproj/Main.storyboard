@@ -15,7 +15,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MtP-5f-j8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="49"/>
+            <point key="canvasLocation" x="583" y="543"/>
         </scene>
         <!--VideoForloeb-->
         <scene sceneID="tYA-KY-OEO">
@@ -25,17 +25,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVd-PH-aVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="127"/>
+            <point key="canvasLocation" x="909" y="543"/>
         </scene>
         <!--Dagbog-->
-        <scene sceneID="3mt-cF-dBu">
+        <scene sceneID="qIM-oY-dco">
             <objects>
-                <viewControllerPlaceholder storyboardName="Dagbog" id="cWj-Bc-WcB" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="x9Q-z2-hVC"/>
+                <viewControllerPlaceholder storyboardName="Dagbog" id="hgb-BO-kLR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="F8m-vA-32P"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tGa-dT-Gqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vz6-Yu-ewj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="188"/>
+            <point key="canvasLocation" x="1373" y="542"/>
         </scene>
         <!--Oevelser-->
         <scene sceneID="UHj-d3-mtm">
@@ -45,7 +45,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TB5-dQ-zJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="247"/>
+            <point key="canvasLocation" x="1745" y="543"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -72,7 +72,7 @@
                                 </constraints>
                                 <state key="normal" image="dagbog"/>
                                 <connections>
-                                    <segue destination="cWj-Bc-WcB" kind="show" id="a9Q-Jp-UAU"/>
+                                    <segue destination="hgb-BO-kLR" kind="show" id="U5M-wf-dQo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NØGLEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-a8-QMb">
