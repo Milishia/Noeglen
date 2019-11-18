@@ -13,6 +13,7 @@
 		417AF21B2382FA0A00D7115C /* VideoForloeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF21A2382FA0A00D7115C /* VideoForloeb.storyboard */; };
 		417AF21D2382FA6300D7115C /* Dagbog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF21C2382FA6300D7115C /* Dagbog.storyboard */; };
 		417AF21F2382FAAA00D7115C /* Oevelser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF21E2382FAAA00D7115C /* Oevelser.storyboard */; };
+		417AF2212383343100D7115C /* AddDiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AF2202383343100D7115C /* AddDiaryController.swift */; };
 		417CB51F237ECA7500CB225C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417CB51E237ECA7400CB225C /* GoogleService-Info.plist */; };
 		41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2FED2233CC613000B4CE1 /* AppDelegate.swift */; };
 		41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2FED4233CC613000B4CE1 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		417AF21A2382FA0A00D7115C /* VideoForloeb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoForloeb.storyboard; sourceTree = "<group>"; };
 		417AF21C2382FA6300D7115C /* Dagbog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dagbog.storyboard; sourceTree = "<group>"; };
 		417AF21E2382FAAA00D7115C /* Oevelser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Oevelser.storyboard; sourceTree = "<group>"; };
+		417AF2202383343100D7115C /* AddDiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryController.swift; sourceTree = "<group>"; };
 		417CB51C237D3CFA00CB225C /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
 		417CB51D237D3CFA00CB225C /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		417CB51E237ECA7400CB225C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				A17018DB236197AA0093953D /* OevelserViewController.swift */,
 				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
 				A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */,
+				417AF2202383343100D7115C /* AddDiaryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A2FED7233CC613000B4CE1 /* ViewController.swift in Sources */,
+				417AF2212383343100D7115C /* AddDiaryController.swift in Sources */,
 				41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */,
 				41FE8C272360553C0097488C /* Diary.swift in Sources */,
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,

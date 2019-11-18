@@ -11,16 +11,14 @@ import UIKit
 class DiaryController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var addDiaryTitleTextView: UITextField!
-    @IBOutlet weak var addDiaryDescriptionTextView: UITextView!
-    
+
     var diaryTitle = ["Første dagbog", "Anden dagbog", "Tredje dagbog", "Fjerde dagbog", "Femte dagbog"]
     var diaryDescription = ["Idag skrev jeg min første dagbog!", "Idag skrev jeg min anden dagbog!", "Idag skrev jeg min tredje dagbog!", "Idag skrev jeg min fjerde dagbog!", "Idag skrev jeg min femte dagbog!"]
     var diaryDate = ["23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView(frame: .zero)
+        
     }
 }
 
