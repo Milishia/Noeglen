@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E02-SP-LT5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NyttigViden-->
+        <scene sceneID="bDQ-I5-2hc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NyttigViden" id="lKb-Tp-DtK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rOK-Ne-nbq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtP-5f-j8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="49"/>
+        </scene>
+        <!--VideoForloeb-->
+        <scene sceneID="tYA-KY-OEO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VideoForloeb" id="tpz-s3-YFP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OZO-c2-a8h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVd-PH-aVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="127"/>
+        </scene>
+        <!--Dagbog-->
+        <scene sceneID="3mt-cF-dBu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dagbog" id="cWj-Bc-WcB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="x9Q-z2-hVC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGa-dT-Gqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="188"/>
+        </scene>
+        <!--Oevelser-->
+        <scene sceneID="UHj-d3-mtm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Oevelser" id="TxH-wl-zju" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tb5-ab-BN9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TB5-dQ-zJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="247"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyM-F4-XTU">
+                                <rect key="frame" x="20" y="235" width="183" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pyM-F4-XTU" secondAttribute="height" multiplier="1:1" id="IQt-kh-D1v"/>
+                                </constraints>
+                                <state key="normal" image="nyttigviden gul"/>
+                                <connections>
+                                    <segue destination="lKb-Tp-DtK" kind="show" id="X0v-zC-JFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naq-GQ-bPK">
+                                <rect key="frame" x="20" y="445" width="183" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="naq-GQ-bPK" secondAttribute="height" multiplier="1:1" id="wyX-wK-jqi"/>
+                                </constraints>
+                                <state key="normal" image="dagbog"/>
+                                <connections>
+                                    <segue destination="cWj-Bc-WcB" kind="show" id="a9Q-Jp-UAU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NØGLEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-a8-QMb">
+                                <rect key="frame" x="140.5" y="88" width="133.5" height="61"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vejen ud af stress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-fj-Ddk">
+                                <rect key="frame" x="149" y="142" width="116" height="28"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-hG-L6r">
+                                <rect key="frame" x="211" y="235" width="183" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h5F-hG-L6r" secondAttribute="height" multiplier="1:1" id="4Ba-v5-FAk"/>
+                                </constraints>
+                                <state key="normal" image="videoforloeb"/>
+                                <connections>
+                                    <segue destination="tpz-s3-YFP" kind="show" id="3Da-Ff-0Wx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t3-NO-sh1">
+                                <rect key="frame" x="211" y="445" width="183" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0t3-NO-sh1" secondAttribute="height" multiplier="1:1" id="lCL-0h-Lhi"/>
+                                </constraints>
+                                <state key="normal" image="øvelser gul"/>
+                                <connections>
+                                    <segue destination="TxH-wl-zju" kind="show" id="Fp5-Sm-fgZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FjT-a8-QMb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="00P-Pm-PP9"/>
+                            <constraint firstItem="bWd-fj-Ddk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0j8-d0-YJN"/>
+                            <constraint firstItem="0t3-NO-sh1" firstAttribute="height" secondItem="pyM-F4-XTU" secondAttribute="height" id="1Zr-Rr-NZX"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="top" secondItem="0t3-NO-sh1" secondAttribute="top" id="2lq-Xp-eVU"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="height" secondItem="pyM-F4-XTU" secondAttribute="height" id="3YO-Ji-v3e"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="top" secondItem="pyM-F4-XTU" secondAttribute="bottom" constant="27" id="58c-JT-h3u"/>
+                            <constraint firstItem="bWd-fj-Ddk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="8ZO-a8-1Lk"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="top" secondItem="bWd-fj-Ddk" secondAttribute="bottom" constant="65" id="8fc-sO-mIe"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9bj-TV-cJd"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="leading" secondItem="naq-GQ-bPK" secondAttribute="leading" id="ATg-60-6CG"/>
+                            <constraint firstItem="0t3-NO-sh1" firstAttribute="width" secondItem="pyM-F4-XTU" secondAttribute="width" id="EbI-VX-YxI"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="width" secondItem="pyM-F4-XTU" secondAttribute="width" id="K0i-Z2-ULy"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="height" secondItem="pyM-F4-XTU" secondAttribute="height" id="MgF-ft-ZEK"/>
+                            <constraint firstItem="FjT-a8-QMb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MhU-9k-QEq"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="leading" secondItem="pyM-F4-XTU" secondAttribute="trailing" constant="8" id="bYt-Yf-yca"/>
+                            <constraint firstItem="bWd-fj-Ddk" firstAttribute="centerX" secondItem="FjT-a8-QMb" secondAttribute="centerX" id="bhy-qz-duw"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dSq-98-uVb"/>
+                            <constraint firstItem="pyM-F4-XTU" firstAttribute="top" secondItem="h5F-hG-L6r" secondAttribute="top" id="eEV-64-6Ep"/>
+                            <constraint firstItem="naq-GQ-bPK" firstAttribute="width" secondItem="pyM-F4-XTU" secondAttribute="width" id="fUF-7x-qOe"/>
+                            <constraint firstItem="h5F-hG-L6r" firstAttribute="leading" secondItem="0t3-NO-sh1" secondAttribute="leading" id="tYR-lr-D6m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wep-vZ-Omf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="127"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="bFw-Fy-nJe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" id="y0b-tZ-ujJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="nYX-Rf-fta"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzU-ow-u7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="507"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="x8w-ke-Ace">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="E02-SP-LT5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X7x-nD-r2v">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M4Q-cO-SHx" kind="relationship" relationship="viewControllers" id="Dbk-vU-XTK"/>
+                        <segue destination="y0b-tZ-ujJ" kind="relationship" relationship="viewControllers" id="RMr-Qr-jTQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5Y-tm-IsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="129"/>
+        </scene>
+        <!--HJEM-->
+        <scene sceneID="X46-yf-Wji">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M4Q-cO-SHx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HJEM" image="house" catalog="system" id="SP3-jS-2mv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sRn-mC-cU4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1A1-ay-6Ja"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zy-nX-NIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dagbog" width="183" height="183"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="nyttigviden gul" width="550" height="550"/>
+        <image name="videoforloeb" width="183" height="183"/>
+        <image name="øvelser gul" width="550" height="550"/>
+    </resources>
+</document>
