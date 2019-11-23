@@ -25,5 +25,7 @@ class ShowDiaryController: UIViewController {
         diaryTitleLabel.text = diaryTitle
         diaryDescriptionLabel.text = diaryDescription
         diaryDateLabel.text = diaryDate
+        
+        
     }
 }

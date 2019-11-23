@@ -98,7 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="3ht-f4-PKk"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dagbog" id="nxp-91-S71">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="COD-dQ-Egu">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="COD-dQ-Egu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d9W-6g-3bQ">
                                 <rect key="frame" x="373.5" y="11" width="20.5" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

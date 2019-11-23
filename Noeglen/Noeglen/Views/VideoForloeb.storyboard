@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="atu-fd-ici">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Videoforløb-->
+        <scene sceneID="E7V-HM-buS">
+            <objects>
+                <viewController title="Videoforløb" id="atu-fd-ici" customClass="VFViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jLl-bG-gc6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-rt-Sgh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VR5-vN-NDb">
+                                    <size key="itemSize" width="185" height="190"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2bL-N7-f84" customClass="CollectionViewVideoCellController" customModule="Noeglen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BBo-BI-X4f">
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="190"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="185" height="190"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="atu-fd-ici" id="QRp-9G-6K9"/>
+                                    <outlet property="delegate" destination="atu-fd-ici" id="J6P-ey-LOy"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="d6c-rt-Sgh" secondAttribute="bottom" id="7gs-k2-DBf"/>
+                            <constraint firstAttribute="trailing" secondItem="d6c-rt-Sgh" secondAttribute="trailing" id="IS3-TC-grY"/>
+                            <constraint firstItem="d6c-rt-Sgh" firstAttribute="top" secondItem="jLl-bG-gc6" secondAttribute="top" id="ar2-29-0tm"/>
+                            <constraint firstItem="d6c-rt-Sgh" firstAttribute="leading" secondItem="jLl-bG-gc6" secondAttribute="leading" id="kDu-Mi-R2V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aEN-kg-P0G"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video forløb" id="gs6-Ko-LnN"/>
+                    <connections>
+                        <outlet property="videoCollectionView" destination="d6c-rt-Sgh" id="44V-Qf-nA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVQ-CP-iG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676.811594202899" y="-453.34821428571428"/>
+        </scene>
+    </scenes>
+</document>

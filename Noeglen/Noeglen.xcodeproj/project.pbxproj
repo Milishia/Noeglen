@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4108E21D2387E3D600EF88BE /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */; };
+		4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */; };
 		412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D66E62362F02A0069F180 /* StressBarometerController.swift */; };
 		417AF2172382F75F00D7115C /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF2162382F75F00D7115C /* Favorites.storyboard */; };
 		417AF2192382F99E00D7115C /* NyttigViden.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF2182382F99E00D7115C /* NyttigViden.storyboard */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		412D66E62362F02A0069F180 /* StressBarometerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressBarometerController.swift; sourceTree = "<group>"; };
 		417AF2162382F75F00D7115C /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		417AF2182382F99E00D7115C /* NyttigViden.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NyttigViden.storyboard; sourceTree = "<group>"; };
@@ -76,7 +80,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		417AF2152382F6BE00D7115C /* Storyboards */ = {
+		4108E2182386D1E600EF88BE /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				417AF2202383343100D7115C /* AddDiaryController.swift */,
+				41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */,
+				41FE8C2D23607C5D0097488C /* DiaryController.swift */,
+				41FE8C24236054130097488C /* DiaryCell.swift */,
+				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		4108E2192386D1FC00EF88BE /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				A17018D7236194AE0093953D /* VFViewController.swift */,
+				4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */,
+				4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		4108E21A2386D22200EF88BE /* Oevelser */ = {
+			isa = PBXGroup;
+			children = (
+				A17018DB236197AA0093953D /* OevelserViewController.swift */,
+				A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */,
+			);
+			path = Oevelser;
+			sourceTree = "<group>";
+		};
+		417AF2152382F6BE00D7115C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				41A2FED8233CC613000B4CE1 /* Main.storyboard */,
@@ -86,7 +121,15 @@
 				417AF21C2382FA6300D7115C /* Dagbog.storyboard */,
 				417AF21E2382FAAA00D7115C /* Oevelser.storyboard */,
 			);
-			path = Storyboards;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		417AF2222384389C00D7115C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41FE8C262360553C0097488C /* Diary.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		41A2FEC6233CC613000B4CE1 = {
@@ -111,12 +154,11 @@
 		41A2FED1233CC613000B4CE1 /* Noeglen */ = {
 			isa = PBXGroup;
 			children = (
-				417AF2152382F6BE00D7115C /* Storyboards */,
+				417AF2222384389C00D7115C /* Models */,
+				417AF2152382F6BE00D7115C /* Views */,
 				41FE8C2A236057F50097488C /* Controllers */,
 				41A2FED2233CC613000B4CE1 /* AppDelegate.swift */,
 				41A2FED4233CC613000B4CE1 /* SceneDelegate.swift */,
-				41FE8C24236054130097488C /* DiaryCell.swift */,
-				41FE8C262360553C0097488C /* Diary.swift */,
 				41A2FEDB233CC614000B4CE1 /* Assets.xcassets */,
 				41A2FEDD233CC614000B4CE1 /* LaunchScreen.storyboard */,
 				41A2FEE0233CC614000B4CE1 /* Info.plist */,
@@ -128,14 +170,10 @@
 		41FE8C2A236057F50097488C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4108E21A2386D22200EF88BE /* Oevelser */,
+				4108E2192386D1FC00EF88BE /* Videos */,
+				4108E2182386D1E600EF88BE /* Diary */,
 				41A2FED6233CC613000B4CE1 /* ViewController.swift */,
-				41FE8C2D23607C5D0097488C /* DiaryController.swift */,
-				41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */,
-				A17018D7236194AE0093953D /* VFViewController.swift */,
-				A17018DB236197AA0093953D /* OevelserViewController.swift */,
-				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
-				A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */,
-				417AF2202383343100D7115C /* AddDiaryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */,
 				417AF21D2382FA6300D7115C /* Dagbog.storyboard in Resources */,
 				417AF21F2382FAAA00D7115C /* Oevelser.storyboard in Resources */,
 				41A2FEE7233CC673000B4CE1 /* .gitignore in Resources */,
@@ -301,6 +340,7 @@
 			files = (
 				41A2FED7233CC613000B4CE1 /* ViewController.swift in Sources */,
 				417AF2212383343100D7115C /* AddDiaryController.swift in Sources */,
+				4108E21D2387E3D600EF88BE /* VideoCollectionViewCell.swift in Sources */,
 				41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */,
 				41FE8C272360553C0097488C /* Diary.swift in Sources */,
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,
