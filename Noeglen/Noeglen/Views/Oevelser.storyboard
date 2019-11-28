@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vDR-qn-Dg3">
-                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="itemSize" width="175" height="175"/>
                                     <size key="estimatedItemSize" width="200" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -55,10 +55,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="rig-Pa-Eex" secondAttribute="trailing" constant="10" id="yPl-nY-dzx"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <gestureRecognizers/>
                                         <size key="customSize" width="175" height="175"/>
                                         <connections>
                                             <outlet property="OevelserImageView" destination="rig-Pa-Eex" id="8BL-VY-eTO"/>
                                             <outlet property="OevelserLabel" destination="umD-vY-cad" id="9Sk-pJ-PwP"/>
+                                            <outletCollection property="gestureRecognizers" destination="PiV-dx-iB8" appends="YES" id="dJK-wQ-ZAm"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -80,11 +82,17 @@
                     <navigationItem key="navigationItem" title="Øvelser" id="YPU-we-EY3"/>
                     <connections>
                         <outlet property="OevelserCollectionView" destination="dAA-HK-AfK" id="8T7-Fm-ABb"/>
+                        <outlet property="tap" destination="PiV-dx-iB8" id="IeH-Jw-Gkq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMv-Md-Zwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="PiV-dx-iB8">
+                    <connections>
+                        <action selector="tapAction:" destination="HMH-Gv-XOu" id="z05-th-RCX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1892.753623188406" y="850.44642857142856"/>
+            <point key="canvasLocation" x="1892.4107142857142" y="849.27536231884062"/>
         </scene>
     </scenes>
 </document>
