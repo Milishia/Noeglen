@@ -11,17 +11,25 @@ import Firebase
 
 class DiaryController: UIViewController {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    var finalMoodValue = 0
 
     var diaryTitle = ["Første dagbog", "Anden dagbog", "Tredje dagbog", "Fjerde dagbog", "Femte dagbog"]
     var diaryDescription = ["Idag skrev jeg min første dagbog!", "Idag skrev jeg min anden dagbog!", "Idag skrev jeg min tredje dagbog!", "Idag skrev jeg min fjerde dagbog!", "Idag skrev jeg min femte dagbog!"]
     var diaryDate = ["23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019"]
+    
+    // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 }
+
+// MARK: - Functions
 
 extension DiaryController : UITableViewDataSource, UITableViewDelegate {
     
@@ -47,4 +55,6 @@ extension DiaryController : UITableViewDataSource, UITableViewDelegate {
         vc?.diaryDate = diaryDate[indexPath.row]
         self.navigationController?.pushViewController(vc!, animated: true)
     }
+    
+    @IBAction func unwindToDiary(_ sender: UIStoryboardSegue) {}
 }

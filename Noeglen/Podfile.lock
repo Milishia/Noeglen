@@ -269,9 +269,6 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - pop (1.0.12)
-  - SDWebImage (5.3.2):
-    - SDWebImage/Core (= 5.3.2)
-  - SDWebImage/Core (5.3.2)
 
 DEPENDENCIES:
   - Crashlytics
@@ -280,7 +277,6 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - fluid-slider
-  - SDWebImage
 
 SPEC REPOS:
   trunk:
@@ -306,7 +302,6 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - pop
-    - SDWebImage
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -331,8 +326,7 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
-  SDWebImage: 6ac2eb96571bff96ecde31a987172c5934a0eb7d
 
-PODFILE CHECKSUM: b0fa07e49c63e184e5a30c4f6c6648be77be9055
+PODFILE CHECKSUM: c4b56880892d10f2379147d610c7859a2053a7fe
 
 COCOAPODS: 1.8.4

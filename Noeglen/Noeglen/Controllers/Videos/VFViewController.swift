@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import SafariServices
-import SDWebImage
 import AVFoundation
 
 struct Video {
@@ -81,9 +80,6 @@ extension VFViewController: UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ videoCollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = videoCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! VideoCollectionViewCell
-        
-        //let videoThumbnailImageURL = URL(string: videos[indexPath.row].videoId)
-        //cell.videoThumbnailView.sd_setImage(with: videoThumbnailImageURL)
         
         cell.videoThumbnailView.image = UIImage(named: videos[indexPath.item].videoName)
         cell.videoTitleLabel.text = videos[indexPath.item].videoName

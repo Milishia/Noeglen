@@ -8,11 +8,19 @@
 
 import UIKit
 import fluid_slider
+import Foundation
 
 class StressBarometerController: UIViewController {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var stressSlider: Slider!
+    
+    var moodText = ""
+    var moodValue = 0
+    
+    // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,5 +44,23 @@ class StressBarometerController: UIViewController {
         stressSlider.contentViewColor = UIColor(red: 78/255.0, green: 77/255.0, blue: 224/255.0, alpha: 1)
         stressSlider.valueViewColor = .white
     }
-
+    
+    // MARK: - Functions
+    
+    @IBAction func goToPopUpButton(_ sender: Any) {
+        if (round(stressSlider.fraction * 10) < 5) {
+                moodText = "Det er jeg ked af at høre... Har du lyst til at uddybe, hvad der har gjort din dag mindre god?"
+                moodValue = Int(round(stressSlider.fraction * 10))
+            } else {
+                moodText = "Det er godt at høre, har du lyst til at uddybe, hvad der har gjort din dag idag god?"
+                moodValue = Int(round(stressSlider.fraction * 10))
+            }
+            performSegue(withIdentifier: "mood", sender: self)
+        }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let vc = segue.destination as! PopUpViewController
+            vc.finalMood = moodText
+            vc.finalMoodValue = moodValue
+    }
 }
