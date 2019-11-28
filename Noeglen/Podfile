@@ -1,26 +1,25 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'Noeglen' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Noeglen
-    
-    # Fluid-slider library
-    pod 'fluid-slider'
+
+pod 'fluid-slider'
     
     # Webimage library
-    pod 'SDWebImage', '~> 5.0'
-    
+    pod 'SDWebImage'    
     # Firebase
     pod 'Firebase/Analytics'
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
 
     # Pods for PodTest
-    pod 'Fabric', '~> 1.10.2'
-    pod 'Crashlytics', '~> 3.14.0'
-    
-end
+    pod 'Fabric'
+    pod 'Crashlytics'
 
+
+
+end

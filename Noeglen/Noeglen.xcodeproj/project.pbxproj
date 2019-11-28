@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3702A0BE9539AB8A3762F33D /* Pods_Noeglen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2672D2A40AC4A2ABB9BB7E /* Pods_Noeglen.framework */; };
 		4108E21D2387E3D600EF88BE /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */; };
 		4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */; };
 		412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D66E62362F02A0069F180 /* StressBarometerController.swift */; };
@@ -28,10 +29,9 @@
 		41FE8C272360553C0097488C /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C262360553C0097488C /* Diary.swift */; };
 		41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2D23607C5D0097488C /* DiaryController.swift */; };
 		41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */; };
-		7840A14894976B38B5377CBA /* Pods_Noeglen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB018419E15ECD56E3A82642 /* Pods_Noeglen.framework */; };
+		A1479946238FC24C00DB1691 /* OevelserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */; };
+		A1479948238FC36500DB1691 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1479947238FC36500DB1691 /* CellCollectionViewCell.swift */; };
 		A17018D8236194AE0093953D /* VFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17018D7236194AE0093953D /* VFViewController.swift */; };
-		A17018DC236197AA0093953D /* OevelserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17018DB236197AA0093953D /* OevelserViewController.swift */; };
-		A1DC5CC9237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,12 +60,12 @@
 		41FE8C262360553C0097488C /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		41FE8C2D23607C5D0097488C /* DiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryController.swift; sourceTree = "<group>"; };
 		41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDiaryController.swift; sourceTree = "<group>"; };
-		6AAABFA740927D0BA76E6732 /* Pods-Noeglen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.debug.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2672D2A40AC4A2ABB9BB7E /* Pods_Noeglen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noeglen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelserCollectionViewController.swift; sourceTree = "<group>"; };
+		A1479947238FC36500DB1691 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		A17018D7236194AE0093953D /* VFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFViewController.swift; sourceTree = "<group>"; };
-		A17018DB236197AA0093953D /* OevelserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelserViewController.swift; sourceTree = "<group>"; };
-		A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellControllerCollectionViewCell.swift; sourceTree = "<group>"; };
-		CB018419E15ECD56E3A82642 /* Pods_Noeglen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noeglen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE3EB42EFE71D0AE1FC154BC /* Pods-Noeglen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.release.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.release.xcconfig"; sourceTree = "<group>"; };
+		A31EA410B7273EF6CE85411B /* Pods-Noeglen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.debug.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5194D14D882EEC11CE170F /* Pods-Noeglen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.release.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7840A14894976B38B5377CBA /* Pods_Noeglen.framework in Frameworks */,
+				3702A0BE9539AB8A3762F33D /* Pods_Noeglen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +105,8 @@
 		4108E21A2386D22200EF88BE /* Oevelser */ = {
 			isa = PBXGroup;
 			children = (
-				A17018DB236197AA0093953D /* OevelserViewController.swift */,
-				A1DC5CC8237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift */,
+				A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */,
+				A1479947238FC36500DB1691 /* CellCollectionViewCell.swift */,
 			);
 			path = Oevelser;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 				41A2FEE6233CC673000B4CE1 /* .gitignore */,
 				41A2FED1233CC613000B4CE1 /* Noeglen */,
 				41A2FED0233CC613000B4CE1 /* Products */,
-				B6AEE1FE3AFB3A9AFA913721 /* Pods */,
 				53304FC669410D9717CB486B /* Frameworks */,
+				5648846DB3CDB64024004B70 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,16 +181,16 @@
 		53304FC669410D9717CB486B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB018419E15ECD56E3A82642 /* Pods_Noeglen.framework */,
+				9B2672D2A40AC4A2ABB9BB7E /* Pods_Noeglen.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B6AEE1FE3AFB3A9AFA913721 /* Pods */ = {
+		5648846DB3CDB64024004B70 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6AAABFA740927D0BA76E6732 /* Pods-Noeglen.debug.xcconfig */,
-				FE3EB42EFE71D0AE1FC154BC /* Pods-Noeglen.release.xcconfig */,
+				A31EA410B7273EF6CE85411B /* Pods-Noeglen.debug.xcconfig */,
+				ED5194D14D882EEC11CE170F /* Pods-Noeglen.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -346,10 +346,10 @@
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,
 				A17018D8236194AE0093953D /* VFViewController.swift in Sources */,
 				41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */,
-				A1DC5CC9237D5F8200E7F3CE /* CellControllerCollectionViewCell.swift in Sources */,
+				A1479948238FC36500DB1691 /* CellCollectionViewCell.swift in Sources */,
 				41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */,
+				A1479946238FC24C00DB1691 /* OevelserCollectionViewController.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
-				A17018DC236197AA0093953D /* OevelserViewController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +496,7 @@
 		};
 		41A2FEE4233CC614000B4CE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AAABFA740927D0BA76E6732 /* Pods-Noeglen.debug.xcconfig */;
+			baseConfigurationReference = A31EA410B7273EF6CE85411B /* Pods-Noeglen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -516,7 +516,7 @@
 		};
 		41A2FEE5233CC614000B4CE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE3EB42EFE71D0AE1FC154BC /* Pods-Noeglen.release.xcconfig */;
+			baseConfigurationReference = ED5194D14D882EEC11CE170F /* Pods-Noeglen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

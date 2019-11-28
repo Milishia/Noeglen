@@ -11,7 +11,7 @@
         <!--Øvelser-->
         <scene sceneID="ub0-ex-OWs">
             <objects>
-                <viewController title="Øvelser" id="HMH-Gv-XOu" customClass="OevelserViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Øvelser" id="HMH-Gv-XOu" customClass="OevelserCollectionViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UgK-uz-onw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,35 +27,41 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OevelserCell" id="zfT-9s-HGy" customClass="CellControllerCollectionViewCell" customModule="Noeglen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellO" id="1Kx-NU-mrT" customClass="CellCollectionViewCell" customModule="Noeglen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gdV-dV-VRC">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qMl-9Q-C1q" customClass="CellCollectionViewCell" customModule="Noeglen" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hOd-3i-c6K">
-                                                    <rect key="frame" x="0.0" y="36" width="200" height="128"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rig-Pa-Eex">
+                                                    <rect key="frame" x="10" y="10" width="155" height="108"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umD-vY-cad">
+                                                    <rect key="frame" x="0.0" y="146" width="167" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.91372549020000005" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="hOd-3i-c6K" firstAttribute="top" secondItem="gdV-dV-VRC" secondAttribute="top" constant="36" id="AyO-1R-N0E"/>
-                                                <constraint firstItem="hOd-3i-c6K" firstAttribute="leading" secondItem="gdV-dV-VRC" secondAttribute="leading" id="Vug-tv-WMS"/>
-                                                <constraint firstAttribute="trailing" secondItem="hOd-3i-c6K" secondAttribute="trailing" id="aDY-n3-MCR"/>
-                                                <constraint firstAttribute="bottom" secondItem="hOd-3i-c6K" secondAttribute="bottom" constant="36" id="sbv-bN-viB"/>
+                                                <constraint firstAttribute="bottom" secondItem="umD-vY-cad" secondAttribute="bottom" constant="8" id="02s-nt-vSr"/>
+                                                <constraint firstItem="rig-Pa-Eex" firstAttribute="leading" secondItem="qMl-9Q-C1q" secondAttribute="leading" constant="10" id="Mcp-hN-i9N"/>
+                                                <constraint firstAttribute="trailing" secondItem="umD-vY-cad" secondAttribute="trailing" constant="8" id="NFQ-1E-LnX"/>
+                                                <constraint firstItem="umD-vY-cad" firstAttribute="top" secondItem="rig-Pa-Eex" secondAttribute="bottom" constant="28" id="O2t-gG-W0E"/>
+                                                <constraint firstItem="rig-Pa-Eex" firstAttribute="top" secondItem="qMl-9Q-C1q" secondAttribute="top" constant="10" id="RON-zI-5Dk"/>
+                                                <constraint firstItem="umD-vY-cad" firstAttribute="leading" secondItem="qMl-9Q-C1q" secondAttribute="leading" id="jHn-EJ-vq6"/>
+                                                <constraint firstAttribute="trailing" secondItem="rig-Pa-Eex" secondAttribute="trailing" constant="10" id="yPl-nY-dzx"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="200" height="200"/>
+                                        <size key="customSize" width="175" height="175"/>
                                         <connections>
-                                            <outlet property="imageView" destination="hOd-3i-c6K" id="CEf-6d-0pd"/>
+                                            <outlet property="OevelserImageView" destination="rig-Pa-Eex" id="8BL-VY-eTO"/>
+                                            <outlet property="OevelserLabel" destination="umD-vY-cad" id="9Sk-pJ-PwP"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="HMH-Gv-XOu" id="V9E-mh-FXR"/>
-                                    <outlet property="delegate" destination="HMH-Gv-XOu" id="Ggc-5b-mzG"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.89411764709999997" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,12 +79,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Øvelser" id="YPU-we-EY3"/>
                     <connections>
-                        <outlet property="collectionView" destination="dAA-HK-AfK" id="lLG-U0-HtW"/>
+                        <outlet property="OevelserCollectionView" destination="dAA-HK-AfK" id="8T7-Fm-ABb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMv-Md-Zwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835" y="865"/>
+            <point key="canvasLocation" x="1892.753623188406" y="850.44642857142856"/>
         </scene>
     </scenes>
 </document>
