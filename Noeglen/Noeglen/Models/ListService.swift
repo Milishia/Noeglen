@@ -25,7 +25,7 @@ class ListService {
             "Description": diaryDescription,
             "Mood": diaryMood,
             "Date": diaryDate
-        ]) { error in
+            ]) { error in
             if let error = error {
                 print("Error adding document: \(error)")
                 completion(false)

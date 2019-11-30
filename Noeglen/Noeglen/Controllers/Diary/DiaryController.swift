@@ -20,8 +20,6 @@ class DiaryController: UIViewController {
     var diaries: [Diary] = []
     let diaryService = ListService()
     
-    //var diaryDate = ["23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019"]
-    
     let date = Date()
     let calendar = Calendar.current
     
@@ -31,10 +29,11 @@ class DiaryController: UIViewController {
         super.viewDidLoad()
         
         let db = Firestore.firestore()
-        db.collection("diaries").getDocuments() { (snapshot, error) in
+        db.collection("diaries").addSnapshotListener { (snapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
             } else {
+                self.diaries.removeAll()
                 for document in snapshot!.documents {
                     self.diaries.append(Diary(title: document.get("Title") as! String, description: document.get("Description") as! String, date: document.get("Date") as! String))
                 }
