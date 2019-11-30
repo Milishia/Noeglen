@@ -18,9 +18,15 @@ class PopUpViewController: UIViewController {
     
     let stressBarometer = StressBarometerController()
     let db = Firestore.firestore()
+    let diaryService = ListService()
     
     var finalMood = ""
     var finalMoodValue = 0
+    
+    let date = Date()
+    let calendar = Calendar.current
+    
+    // MARK: - Init
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +35,8 @@ class PopUpViewController: UIViewController {
         
         moodTextField.text = finalMood
     }
+    
+    // MARK: - Functions
     
     @IBAction func goToDiaryButton(_ sender: Any) {
         print(finalMoodValue)
@@ -41,17 +49,16 @@ class PopUpViewController: UIViewController {
             let vc = segue.destination as! AddDiaryController
             vc.savedMoodValueText = finalMoodValue
         default:
-            print("No segue called")
+            print("saveMoodToDiaryButton was called")
         }
     }
 
     @IBAction func saveMoodToDiaryButton(_ sender: Any) {
-        db.collection("diaries").addDocument(data: ["Title": "", "Description": "", "Mood": finalMoodValue]) { (error) in
-                if let e = error {
-                    print("There was an issue saving data to firestore, \(e)")
-                } else {
-                    print("Successfully saved data")
+        let diaryDate = "\(calendar.component(.day, from: date))/\(calendar.component(.month, from: date))/\(calendar.component(.year, from: date))"
+        diaryService.addToList(diaryTitle: "Dagens humør", diaryDescription: "Mit humør idag var: \(finalMoodValue)", diaryDate: diaryDate, diaryMood: finalMoodValue, completion: { (status) in
+            if (status) {
+                print("Status", status)
             }
-        }
+        })
     }
 }

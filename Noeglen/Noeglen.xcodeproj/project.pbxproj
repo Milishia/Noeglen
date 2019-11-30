@@ -11,6 +11,7 @@
 		4108E21D2387E3D600EF88BE /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */; };
 		4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */; };
 		412586F923900863001A6286 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412586F823900863001A6286 /* PopUpViewController.swift */; };
+		412586FB2392869D001A6286 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412586FA2392869D001A6286 /* ListService.swift */; };
 		412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D66E62362F02A0069F180 /* StressBarometerController.swift */; };
 		417AF2172382F75F00D7115C /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF2162382F75F00D7115C /* Favorites.storyboard */; };
 		417AF2192382F99E00D7115C /* NyttigViden.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF2182382F99E00D7115C /* NyttigViden.storyboard */; };
@@ -39,6 +40,7 @@
 		4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		412586F823900863001A6286 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		412586FA2392869D001A6286 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
 		412D66E62362F02A0069F180 /* StressBarometerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressBarometerController.swift; sourceTree = "<group>"; };
 		417AF2162382F75F00D7115C /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		417AF2182382F99E00D7115C /* NyttigViden.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NyttigViden.storyboard; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				41FE8C262360553C0097488C /* Diary.swift */,
+				412586FA2392869D001A6286 /* ListService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				412586F923900863001A6286 /* PopUpViewController.swift in Sources */,
 				41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */,
 				A1479946238FC24C00DB1691 /* OevelserCollectionViewController.swift in Sources */,
+				412586FB2392869D001A6286 /* ListService.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseFirestore
 
 class DiaryController: UIViewController {
     
@@ -16,16 +16,31 @@ class DiaryController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var finalMoodValue = 0
-
-    var diaryTitle = ["Første dagbog", "Anden dagbog", "Tredje dagbog", "Fjerde dagbog", "Femte dagbog"]
-    var diaryDescription = ["Idag skrev jeg min første dagbog!", "Idag skrev jeg min anden dagbog!", "Idag skrev jeg min tredje dagbog!", "Idag skrev jeg min fjerde dagbog!", "Idag skrev jeg min femte dagbog!"]
-    var diaryDate = ["23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019"]
+    
+    var diaries: [Diary] = []
+    let diaryService = ListService()
+    
+    //var diaryDate = ["23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019", "23/10/2019"]
+    
+    let date = Date()
+    let calendar = Calendar.current
     
     // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let db = Firestore.firestore()
+        db.collection("diaries").getDocuments() { (snapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in snapshot!.documents {
+                    self.diaries.append(Diary(title: document.get("Title") as! String, description: document.get("Description") as! String, date: document.get("Date") as! String))
+                }
+            }
+            self.tableView.reloadData()
+        }
     }
 }
 
@@ -34,15 +49,15 @@ class DiaryController: UIViewController {
 extension DiaryController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return diaryTitle.count
+        return diaries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryCell", for: indexPath) as! DiaryCell
         
-        cell.diaryTitleLabel.text = diaryTitle[indexPath.row]
-        cell.diaryDescriptionLabel.text = diaryDescription[indexPath.row]
-        cell.diaryDateLabel.text = diaryDate[indexPath.row]
+        cell.diaryTitleLabel.text = diaries[indexPath.row].title
+        cell.diaryDescriptionLabel.text = diaries[indexPath.row].description
+        cell.diaryDateLabel.text = diaries[indexPath.row].date
         
         return cell
     }
@@ -50,9 +65,9 @@ extension DiaryController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ShowDiaryController") as? ShowDiaryController
         
-        vc?.diaryTitle = diaryTitle[indexPath.row]
-        vc?.diaryDescription = diaryDescription[indexPath.row]
-        vc?.diaryDate = diaryDate[indexPath.row]
+        vc?.diaryTitle = diaries[indexPath.row].title
+        vc?.diaryDescription = diaries[indexPath.row].description
+        vc?.diaryDate = diaries[indexPath.row].date
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
