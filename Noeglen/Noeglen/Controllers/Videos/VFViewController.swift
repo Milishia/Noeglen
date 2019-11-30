@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import SafariServices
-import AVFoundation
 
 struct Video {
     var videoId: String

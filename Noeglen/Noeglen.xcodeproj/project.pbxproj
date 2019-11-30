@@ -12,6 +12,9 @@
 		4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */; };
 		412586F923900863001A6286 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412586F823900863001A6286 /* PopUpViewController.swift */; };
 		412586FB2392869D001A6286 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412586FA2392869D001A6286 /* ListService.swift */; };
+		412586FE2392B5DB001A6286 /* NyttigVidenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412586FD2392B5DB001A6286 /* NyttigVidenViewController.swift */; };
+		412587002392B810001A6286 /* NyttigVidenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412586FF2392B810001A6286 /* NyttigVidenCell.swift */; };
+		412587042392BFE5001A6286 /* Artikel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412587032392BFE5001A6286 /* Artikel.swift */; };
 		412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D66E62362F02A0069F180 /* StressBarometerController.swift */; };
 		417AF2172382F75F00D7115C /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF2162382F75F00D7115C /* Favorites.storyboard */; };
 		417AF2192382F99E00D7115C /* NyttigViden.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AF2182382F99E00D7115C /* NyttigViden.storyboard */; };
@@ -41,6 +44,9 @@
 		4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		412586F823900863001A6286 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		412586FA2392869D001A6286 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		412586FD2392B5DB001A6286 /* NyttigVidenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyttigVidenViewController.swift; sourceTree = "<group>"; };
+		412586FF2392B810001A6286 /* NyttigVidenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyttigVidenCell.swift; sourceTree = "<group>"; };
+		412587032392BFE5001A6286 /* Artikel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artikel.swift; sourceTree = "<group>"; };
 		412D66E62362F02A0069F180 /* StressBarometerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressBarometerController.swift; sourceTree = "<group>"; };
 		417AF2162382F75F00D7115C /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		417AF2182382F99E00D7115C /* NyttigViden.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NyttigViden.storyboard; sourceTree = "<group>"; };
@@ -116,6 +122,15 @@
 			path = Oevelser;
 			sourceTree = "<group>";
 		};
+		412586FC2392B3AF001A6286 /* Viden */ = {
+			isa = PBXGroup;
+			children = (
+				412586FD2392B5DB001A6286 /* NyttigVidenViewController.swift */,
+				412586FF2392B810001A6286 /* NyttigVidenCell.swift */,
+			);
+			path = Viden;
+			sourceTree = "<group>";
+		};
 		417AF2152382F6BE00D7115C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +149,7 @@
 			children = (
 				41FE8C262360553C0097488C /* Diary.swift */,
 				412586FA2392869D001A6286 /* ListService.swift */,
+				412587032392BFE5001A6286 /* Artikel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +192,7 @@
 		41FE8C2A236057F50097488C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				412586FC2392B3AF001A6286 /* Viden */,
 				4108E21A2386D22200EF88BE /* Oevelser */,
 				4108E2192386D1FC00EF88BE /* Videos */,
 				4108E2182386D1E600EF88BE /* Diary */,
@@ -344,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412587042392BFE5001A6286 /* Artikel.swift in Sources */,
 				41A2FED7233CC613000B4CE1 /* ViewController.swift in Sources */,
 				417AF2212383343100D7115C /* AddDiaryController.swift in Sources */,
 				4108E21D2387E3D600EF88BE /* VideoCollectionViewCell.swift in Sources */,
@@ -351,6 +369,7 @@
 				41FE8C272360553C0097488C /* Diary.swift in Sources */,
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,
 				A17018D8236194AE0093953D /* VFViewController.swift in Sources */,
+				412587002392B810001A6286 /* NyttigVidenCell.swift in Sources */,
 				41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */,
 				A1479948238FC36500DB1691 /* CellCollectionViewCell.swift in Sources */,
 				412586F923900863001A6286 /* PopUpViewController.swift in Sources */,
@@ -358,6 +377,7 @@
 				A1479946238FC24C00DB1691 /* OevelserCollectionViewController.swift in Sources */,
 				412586FB2392869D001A6286 /* ListService.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
+				412586FE2392B5DB001A6286 /* NyttigVidenViewController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

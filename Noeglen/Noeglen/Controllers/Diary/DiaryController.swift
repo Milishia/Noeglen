@@ -43,7 +43,7 @@ class DiaryController: UIViewController {
     }
 }
 
-// MARK: - Functions
+// MARK: - Extension
 
 extension DiaryController : UITableViewDataSource, UITableViewDelegate {
     
@@ -69,6 +69,8 @@ extension DiaryController : UITableViewDataSource, UITableViewDelegate {
         vc?.diaryDate = diaries[indexPath.row].date
         self.navigationController?.pushViewController(vc!, animated: true)
     }
+    
+    // MARK: - Unwind segues
     
     @IBAction func unwindToDiary(_ sender: UIStoryboardSegue) {}
 }
