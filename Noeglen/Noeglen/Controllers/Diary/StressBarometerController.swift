@@ -52,7 +52,7 @@ class StressBarometerController: UIViewController {
                 moodText = "Det er jeg ked af at høre... Har du lyst til at uddybe, hvad der har gjort din dag mindre god?"
                 moodValue = Int(round(stressSlider.fraction * 10))
             } else {
-                moodText = "Det er godt at høre, har du lyst til at uddybe, hvad der har gjort din dag idag god?"
+                moodText = "Det er godt at høre! Har du lyst til at uddybe, hvad der har gjort din dag idag god?"
                 moodValue = Int(round(stressSlider.fraction * 10))
             }
             performSegue(withIdentifier: "mood", sender: self)

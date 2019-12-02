@@ -75,9 +75,9 @@ class VFViewController: UIViewController{
     
     private func setupCollectionViewItemSize() {
         if collectionViewFlowLayout == nil {
-            let numberOfItemPerRow: CGFloat = 2
+            let numberOfItemPerRow: CGFloat = 1
             let lineSpacing: CGFloat = 20
-            let interItemSpacing: CGFloat = 20
+            let interItemSpacing: CGFloat = 8
             
             let width = (videoCollectionView.frame.width - (numberOfItemPerRow - 1) * interItemSpacing) / numberOfItemPerRow
             let height = width - 50
