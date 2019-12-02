@@ -8,64 +8,76 @@
 
 import UIKit
 
-//private let reuseIdentifier = "Cell"
-
 class OevelserCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var OevelserCollectionView: UICollectionView!
+    // MARK: - Properties
     
+    @IBOutlet weak var OevelserCollectionView: UICollectionView!
     @IBOutlet var tap: UITapGestureRecognizer!
     
-    @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
-        
-        print("tapped")
-    }
+    var oevelseCollectionViewFlowLayout: UICollectionViewFlowLayout!
     
-    let OevelseName = ["Barnet","Buen","Båden","Foroverbøjning","Hund","Kakot","Rotation"]
-    let OevelserImage: [UIImage] = [
-        
-        UIImage(named: "barnet")!,
-        UIImage(named: "buen")!,
-        UIImage(named: "baaden")!,
-        UIImage(named: "foroverbojning")!,
-        UIImage(named: "hund")!,
-        UIImage(named: "kokat")!,
-        UIImage(named: "rotationer")!
-    ]
+    let oevelseArray = OevelseArray()
     
-    
+    // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupOevelseCollectionView()
+        
+    }
+    
+    // MARK: - Functions
+    
+    @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
+        print("tapped")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        setupOevelseCollectionViewItemSize()
+    }
+    
+    private func setupOevelseCollectionView() {
         self.OevelserCollectionView.delegate = self
         self.OevelserCollectionView.dataSource = self
-       
-        let layout = self.OevelserCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
-
-      layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        
-        layout.minimumInteritemSpacing = 5
-        layout.itemSize = CGSize(width: (self.OevelserCollectionView.frame.size.width-20)/2, height: self.OevelserCollectionView.frame.size.height/3)
-        
-//        debugPrint("ITEM SIZE: \(layout.itemSize)")
-//        debugPrint("COLLECTIONVIEW SIZE: \(OevelserCollectionView.frame.size)")
-        
-        
+        let nib = UINib(nibName: "OevelseCollectionViewCell", bundle: nil)
+        OevelserCollectionView.register(nib, forCellWithReuseIdentifier: "OevelseCollectionViewCell")
     }
     
+    private func setupOevelseCollectionViewItemSize() {
+        if oevelseCollectionViewFlowLayout == nil {
+            let numberOfItemPerRow: CGFloat = 2
+            let lineSpacing: CGFloat = 20
+            let interItemSpacing: CGFloat = 8
+            
+            let width = (OevelserCollectionView.frame.width - (numberOfItemPerRow - 1) * interItemSpacing) / numberOfItemPerRow
+            let height = width - 50
+            
+            oevelseCollectionViewFlowLayout = UICollectionViewFlowLayout()
+            
+            oevelseCollectionViewFlowLayout.itemSize = CGSize(width: width, height: height)
+            oevelseCollectionViewFlowLayout.sectionInset = UIEdgeInsets.zero
+            oevelseCollectionViewFlowLayout.scrollDirection = .vertical
+            oevelseCollectionViewFlowLayout.minimumLineSpacing = lineSpacing
+            oevelseCollectionViewFlowLayout.minimumInteritemSpacing = interItemSpacing
+            
+        OevelserCollectionView.setCollectionViewLayout(oevelseCollectionViewFlowLayout, animated: true)
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return OevelseName.count
+        return oevelseArray.oevelser.count
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellO", for: indexPath) as! CellCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OevelseCollectionViewCell", for: indexPath) as! OevelseCollectionViewCell
         
-        cell.OevelserLabel.text = OevelseName[indexPath.item]
-        cell.OevelserImageView.image = OevelserImage[indexPath.item]
+        let oevelseText = oevelseArray.oevelser[indexPath.item].oevelseName
+        let oevelseImage = oevelseArray.oevelser[indexPath.item].oevelseImage
+        cell.oevelseLabel.text = oevelseText
+        cell.oevelseImageView.image = UIImage(named: oevelseImage)
          
         return cell
     }

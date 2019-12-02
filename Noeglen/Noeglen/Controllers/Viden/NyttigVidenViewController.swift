@@ -15,12 +15,7 @@ class NyttigVidenViewController: UIViewController {
     
     @IBOutlet weak var articleTableView: UITableView!
     
-    var articles: [Article] = [
-        Article(title: "Viden om stress",
-                description: "Stress er et ord, der dækker over meget. En af ufordringerne med stress er",
-                url: "http://www.stressforeningen.dk/faa-viden/",
-                image: "stressForeningBillede")
-    ]
+    let articleArray = ArticleArray()
     
     // MARK: - Init
 
@@ -30,7 +25,6 @@ class NyttigVidenViewController: UIViewController {
         articleTableView.dataSource = self
         articleTableView.delegate = self
     }
-    
 }
 
 // MARK: - Extension
@@ -38,23 +32,22 @@ class NyttigVidenViewController: UIViewController {
 extension NyttigVidenViewController : UITableViewDataSource, UITableViewDelegate, SFSafariViewControllerDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Vidensbase count called")
-        return articles.count
+        return articleArray.articles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = articleTableView.dequeueReusableCell(withIdentifier: "videnCell", for: indexPath) as! NyttigVidenCell
         
-        cell.articleTitleLabel.text = articles[indexPath.row].title
-        cell.articleDescriptionLabel.text = articles[indexPath.row].description
-        cell.articleUrlLabel.text = articles[indexPath.row].url
-        cell.articlePicture.image = UIImage(named: articles[indexPath.row].image)
+        cell.articleTitleLabel.text = articleArray.articles[indexPath.row].title
+        cell.articleDescriptionLabel.text = articleArray.articles[indexPath.row].description
+        cell.articleUrlLabel.text = articleArray.articles[indexPath.row].url
+        cell.articlePicture.image = UIImage(named: articleArray.articles[indexPath.row].image)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let safariVC = SFSafariViewController(url: NSURL(string: articles[indexPath.row].url)! as URL)
+        let safariVC = SFSafariViewController(url: NSURL(string: articleArray.articles[indexPath.row].url)! as URL)
         
         self.present(safariVC, animated: true, completion: nil)
         safariVC.delegate = self

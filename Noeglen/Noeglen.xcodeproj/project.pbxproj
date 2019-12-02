@@ -32,12 +32,16 @@
 		41A2FEE7233CC673000B4CE1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41A2FEE6233CC673000B4CE1 /* .gitignore */; };
 		41EA16902395324200DD57AD /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA168F2395324200DD57AD /* Video.swift */; };
 		41EA169623953E1900DD57AD /* VideoArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169523953E1900DD57AD /* VideoArray.swift */; };
+		41EA1698239571F100DD57AD /* Oevelse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA1697239571F100DD57AD /* Oevelse.swift */; };
+		41EA169A2395729B00DD57AD /* ArticleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA16992395729B00DD57AD /* ArticleArray.swift */; };
+		41EA169C239573AD00DD57AD /* OevelseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169B239573AD00DD57AD /* OevelseArray.swift */; };
+		41EA16A12395A2BD00DD57AD /* OevelseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */; };
+		41EA16A22395A2BD00DD57AD /* OevelseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EA16A02395A2BD00DD57AD /* OevelseCollectionViewCell.xib */; };
 		41FE8C25236054130097488C /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C24236054130097488C /* DiaryCell.swift */; };
 		41FE8C272360553C0097488C /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C262360553C0097488C /* Diary.swift */; };
 		41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2D23607C5D0097488C /* DiaryController.swift */; };
 		41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */; };
 		A1479946238FC24C00DB1691 /* OevelserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */; };
-		A1479948238FC36500DB1691 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1479947238FC36500DB1691 /* CellCollectionViewCell.swift */; };
 		A17018D8236194AE0093953D /* VFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17018D7236194AE0093953D /* VFViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,13 +74,17 @@
 		41A2FEE6233CC673000B4CE1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		41EA168F2395324200DD57AD /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		41EA169523953E1900DD57AD /* VideoArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoArray.swift; sourceTree = "<group>"; };
+		41EA1697239571F100DD57AD /* Oevelse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oevelse.swift; sourceTree = "<group>"; };
+		41EA16992395729B00DD57AD /* ArticleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleArray.swift; sourceTree = "<group>"; };
+		41EA169B239573AD00DD57AD /* OevelseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelseArray.swift; sourceTree = "<group>"; };
+		41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelseCollectionViewCell.swift; sourceTree = "<group>"; };
+		41EA16A02395A2BD00DD57AD /* OevelseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OevelseCollectionViewCell.xib; sourceTree = "<group>"; };
 		41FE8C24236054130097488C /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		41FE8C262360553C0097488C /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		41FE8C2D23607C5D0097488C /* DiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryController.swift; sourceTree = "<group>"; };
 		41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDiaryController.swift; sourceTree = "<group>"; };
 		9B2672D2A40AC4A2ABB9BB7E /* Pods_Noeglen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noeglen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelserCollectionViewController.swift; sourceTree = "<group>"; };
-		A1479947238FC36500DB1691 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		A17018D7236194AE0093953D /* VFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFViewController.swift; sourceTree = "<group>"; };
 		A31EA410B7273EF6CE85411B /* Pods-Noeglen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.debug.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.debug.xcconfig"; sourceTree = "<group>"; };
 		ED5194D14D882EEC11CE170F /* Pods-Noeglen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noeglen.release.xcconfig"; path = "Target Support Files/Pods-Noeglen/Pods-Noeglen.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +108,6 @@
 				417AF2202383343100D7115C /* AddDiaryController.swift */,
 				41FE8C2F2360AFEE0097488C /* ShowDiaryController.swift */,
 				41FE8C2D23607C5D0097488C /* DiaryController.swift */,
-				41FE8C24236054130097488C /* DiaryCell.swift */,
 				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
 				412586F823900863001A6286 /* PopUpViewController.swift */,
 			);
@@ -111,8 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				A17018D7236194AE0093953D /* VFViewController.swift */,
-				4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */,
-				4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -121,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */,
-				A1479947238FC36500DB1691 /* CellCollectionViewCell.swift */,
 			);
 			path = Oevelser;
 			sourceTree = "<group>";
@@ -130,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				412586FD2392B5DB001A6286 /* NyttigVidenViewController.swift */,
-				412586FF2392B810001A6286 /* NyttigVidenCell.swift */,
 			);
 			path = Viden;
 			sourceTree = "<group>";
@@ -141,9 +144,15 @@
 				41A2FED8233CC613000B4CE1 /* Main.storyboard */,
 				417AF2162382F75F00D7115C /* Favorites.storyboard */,
 				417AF2182382F99E00D7115C /* NyttigViden.storyboard */,
+				412586FF2392B810001A6286 /* NyttigVidenCell.swift */,
 				417AF21A2382FA0A00D7115C /* VideoForloeb.storyboard */,
+				4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */,
+				4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */,
 				417AF21C2382FA6300D7115C /* Dagbog.storyboard */,
+				41FE8C24236054130097488C /* DiaryCell.swift */,
 				417AF21E2382FAAA00D7115C /* Oevelser.storyboard */,
+				41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */,
+				41EA16A02395A2BD00DD57AD /* OevelseCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,8 +163,11 @@
 				41FE8C262360553C0097488C /* Diary.swift */,
 				412586FA2392869D001A6286 /* ListService.swift */,
 				412587032392BFE5001A6286 /* Article.swift */,
+				41EA16992395729B00DD57AD /* ArticleArray.swift */,
 				41EA168F2395324200DD57AD /* Video.swift */,
 				41EA169523953E1900DD57AD /* VideoArray.swift */,
+				41EA1697239571F100DD57AD /* Oevelse.swift */,
+				41EA169B239573AD00DD57AD /* OevelseArray.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EA16A22395A2BD00DD57AD /* OevelseCollectionViewCell.xib in Resources */,
 				4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */,
 				417AF21D2382FA6300D7115C /* Dagbog.storyboard in Resources */,
 				417AF21F2382FAAA00D7115C /* Oevelser.storyboard in Resources */,
@@ -375,15 +388,18 @@
 				41EA169623953E1900DD57AD /* VideoArray.swift in Sources */,
 				41FE8C272360553C0097488C /* Diary.swift in Sources */,
 				41A2FED3233CC613000B4CE1 /* AppDelegate.swift in Sources */,
+				41EA169C239573AD00DD57AD /* OevelseArray.swift in Sources */,
+				41EA1698239571F100DD57AD /* Oevelse.swift in Sources */,
 				A17018D8236194AE0093953D /* VFViewController.swift in Sources */,
 				412587002392B810001A6286 /* NyttigVidenCell.swift in Sources */,
 				41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */,
-				A1479948238FC36500DB1691 /* CellCollectionViewCell.swift in Sources */,
 				412586F923900863001A6286 /* PopUpViewController.swift in Sources */,
+				41EA169A2395729B00DD57AD /* ArticleArray.swift in Sources */,
 				41A2FED5233CC613000B4CE1 /* SceneDelegate.swift in Sources */,
 				A1479946238FC24C00DB1691 /* OevelserCollectionViewController.swift in Sources */,
 				412586FB2392869D001A6286 /* ListService.swift in Sources */,
 				41EA16902395324200DD57AD /* Video.swift in Sources */,
+				41EA16A12395A2BD00DD57AD /* OevelseCollectionViewCell.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
 				412586FE2392B5DB001A6286 /* NyttigVidenViewController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
