@@ -30,8 +30,9 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
     
     // MARK: - Functions
     
-    @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
+    @IBAction func didDoubleTap(_ sender: UITapGestureRecognizer) {
         print("tapped")
+        
     }
     
     override func viewWillLayoutSubviews() {

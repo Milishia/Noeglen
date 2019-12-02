@@ -36,7 +36,8 @@
 		41EA169A2395729B00DD57AD /* ArticleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA16992395729B00DD57AD /* ArticleArray.swift */; };
 		41EA169C239573AD00DD57AD /* OevelseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169B239573AD00DD57AD /* OevelseArray.swift */; };
 		41EA16A12395A2BD00DD57AD /* OevelseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */; };
-		41EA16A22395A2BD00DD57AD /* OevelseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EA16A02395A2BD00DD57AD /* OevelseCollectionViewCell.xib */; };
+		41EA16A42395AA5600DD57AD /* LikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA16A32395AA5600DD57AD /* LikeAnimator.swift */; };
+		41EA16A62395C92700DD57AD /* OevelseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EA16A52395C92600DD57AD /* OevelseCollectionViewCell.xib */; };
 		41FE8C25236054130097488C /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C24236054130097488C /* DiaryCell.swift */; };
 		41FE8C272360553C0097488C /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C262360553C0097488C /* Diary.swift */; };
 		41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2D23607C5D0097488C /* DiaryController.swift */; };
@@ -78,7 +79,8 @@
 		41EA16992395729B00DD57AD /* ArticleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleArray.swift; sourceTree = "<group>"; };
 		41EA169B239573AD00DD57AD /* OevelseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelseArray.swift; sourceTree = "<group>"; };
 		41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelseCollectionViewCell.swift; sourceTree = "<group>"; };
-		41EA16A02395A2BD00DD57AD /* OevelseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OevelseCollectionViewCell.xib; sourceTree = "<group>"; };
+		41EA16A32395AA5600DD57AD /* LikeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimator.swift; sourceTree = "<group>"; };
+		41EA16A52395C92600DD57AD /* OevelseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OevelseCollectionViewCell.xib; sourceTree = "<group>"; };
 		41FE8C24236054130097488C /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		41FE8C262360553C0097488C /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		41FE8C2D23607C5D0097488C /* DiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryController.swift; sourceTree = "<group>"; };
@@ -152,7 +154,7 @@
 				41FE8C24236054130097488C /* DiaryCell.swift */,
 				417AF21E2382FAAA00D7115C /* Oevelser.storyboard */,
 				41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */,
-				41EA16A02395A2BD00DD57AD /* OevelseCollectionViewCell.xib */,
+				41EA16A52395C92600DD57AD /* OevelseCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +170,7 @@
 				41EA169523953E1900DD57AD /* VideoArray.swift */,
 				41EA1697239571F100DD57AD /* Oevelse.swift */,
 				41EA169B239573AD00DD57AD /* OevelseArray.swift */,
+				41EA16A32395AA5600DD57AD /* LikeAnimator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,7 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EA16A22395A2BD00DD57AD /* OevelseCollectionViewCell.xib in Resources */,
+				41EA16A62395C92700DD57AD /* OevelseCollectionViewCell.xib in Resources */,
 				4108E21E2387E3D600EF88BE /* VideoCollectionViewCell.xib in Resources */,
 				417AF21D2382FA6300D7115C /* Dagbog.storyboard in Resources */,
 				417AF21F2382FAAA00D7115C /* Oevelser.storyboard in Resources */,
@@ -401,6 +404,7 @@
 				41EA16902395324200DD57AD /* Video.swift in Sources */,
 				41EA16A12395A2BD00DD57AD /* OevelseCollectionViewCell.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
+				41EA16A42395AA5600DD57AD /* LikeAnimator.swift in Sources */,
 				412586FE2392B5DB001A6286 /* NyttigVidenViewController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);
