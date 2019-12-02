@@ -8,14 +8,8 @@
 
 import Foundation
 
-class Diary {
+struct Diary {
     var title: String
     var description: String
     var date: String
-    
-    init(title: String, description: String, date: String) {
-        self.title = title
-        self.description = description
-        self.date = date
-    }
 }

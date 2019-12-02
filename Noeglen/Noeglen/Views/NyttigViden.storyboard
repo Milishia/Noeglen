@@ -78,10 +78,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="artikelBeskrivelseLabel" destination="ifi-sN-NEj" id="iyU-xW-rg7"/>
-                                            <outlet property="artikelBillede" destination="VuD-CZ-3gC" id="Exc-Nf-uTu"/>
-                                            <outlet property="artikelTitelLabel" destination="qjX-CE-JuL" id="4M0-NU-9uH"/>
-                                            <outlet property="artikelUrlLabel" destination="vKy-gN-bdI" id="yU2-4k-hVD"/>
+                                            <outlet property="articleDescriptionLabel" destination="ifi-sN-NEj" id="iyU-xW-rg7"/>
+                                            <outlet property="articlePicture" destination="VuD-CZ-3gC" id="Exc-Nf-uTu"/>
+                                            <outlet property="articleTitleLabel" destination="qjX-CE-JuL" id="4M0-NU-9uH"/>
+                                            <outlet property="articleUrlLabel" destination="vKy-gN-bdI" id="yU2-4k-hVD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -98,7 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Nyttig viden" id="Exv-OE-zFO"/>
                     <connections>
-                        <outlet property="videnTableView" destination="sY0-ac-j7s" id="SDY-hQ-Xa6"/>
+                        <outlet property="articleTableView" destination="sY0-ac-j7s" id="SDY-hQ-Xa6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xg0-de-Mmv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

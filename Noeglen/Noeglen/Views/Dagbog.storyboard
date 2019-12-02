@@ -215,7 +215,7 @@
                                 <rect key="frame" x="360" y="758" width="34" height="30"/>
                                 <state key="normal" title="Tilføj"/>
                                 <connections>
-                                    <action selector="addDiaryButton:" destination="dr6-EC-bZb" eventType="touchUpInside" id="jJU-QF-dYA"/>
+                                    <action selector="addDiaryButtonClicked:" destination="dr6-EC-bZb" eventType="touchUpInside" id="jJU-QF-dYA"/>
                                     <segue destination="ptb-Bc-1fM" kind="unwind" unwindAction="unwindToDiary:" id="wpe-t5-bAz"/>
                                 </connections>
                             </button>

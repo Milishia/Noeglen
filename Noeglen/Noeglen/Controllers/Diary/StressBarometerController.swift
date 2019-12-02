@@ -24,7 +24,13 @@ class StressBarometerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupStressSlider()
+        
+    }
     
+    // MARK: - Functions
+    
+    private func setupStressSlider() {
         stressSlider.attributedTextForFraction = { fraction in
             let formatter = NumberFormatter()
             formatter.maximumIntegerDigits = 2
@@ -44,8 +50,6 @@ class StressBarometerController: UIViewController {
         stressSlider.contentViewColor = UIColor(red: 78/255.0, green: 77/255.0, blue: 224/255.0, alpha: 1)
         stressSlider.valueViewColor = .white
     }
-    
-    // MARK: - Functions
     
     @IBAction func goToPopUpButton(_ sender: Any) {
         if (round(stressSlider.fraction * 10) < 5) {

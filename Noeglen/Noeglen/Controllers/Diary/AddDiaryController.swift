@@ -13,16 +13,14 @@ class AddDiaryController: UIViewController {
     
     // MARK: - Properties
     
-    let db = Firestore.firestore()
-    
-    var savedMoodValueText = 0
-    let diaryService = ListService()
-
     @IBOutlet weak var addDiaryTitleTextView: UITextField!
     @IBOutlet weak var addDiaryDescriptionTextView: UITextView!
     
+    let db = Firestore.firestore()
+    let diaryService = ListService()
     let date = Date()
     let calendar = Calendar.current
+    var savedMoodValueText = 0
     
     // MARK: - Init
     
@@ -33,7 +31,7 @@ class AddDiaryController: UIViewController {
     
     // MARK: - Functions
     
-    @IBAction func addDiaryButton(_ sender: Any) {
+    @IBAction func addDiaryButtonClicked(_ sender: UIButton) {
         print(savedMoodValueText)
         let diaryDate = "\(calendar.component(.day, from: date))/\(calendar.component(.month, from: date))/\(calendar.component(.year, from: date))"
         if let addDiaryTitle = addDiaryTitleTextView.text, let addDiaryDescription = addDiaryDescriptionTextView.text {

@@ -10,14 +10,14 @@ import UIKit
 
 class NyttigVidenCell: UITableViewCell {
 
-    @IBOutlet weak var artikelTitelLabel: UILabel!
-    @IBOutlet weak var artikelBeskrivelseLabel: UILabel!
-    @IBOutlet weak var artikelUrlLabel: UILabel!
-    @IBOutlet weak var artikelBillede: UIImageView!
+    @IBOutlet weak var articleTitleLabel: UILabel!
+    @IBOutlet weak var articleDescriptionLabel: UILabel!
+    @IBOutlet weak var articleUrlLabel: UILabel!
+    @IBOutlet weak var articlePicture: UIImageView!
     
-    func setArtikel(artikel: Artikel) {
-        artikelTitelLabel.text = artikel.title
-        artikelBeskrivelseLabel.text = artikel.description
-        artikelUrlLabel.text = artikel.url
+    func setArticle(article: Article) {
+        articleTitleLabel.text = article.title
+        articleDescriptionLabel.text = article.description
+        articleUrlLabel.text = article.url
     }
 }
