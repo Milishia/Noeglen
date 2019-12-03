@@ -12,12 +12,13 @@ import UIKit
 
 class OevelserCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    
     @IBOutlet weak var OevelserCollectionView: UICollectionView!
     
     @IBOutlet var tap: UITapGestureRecognizer!
     
     @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
-        
+
         print("tapped")
     }
     
@@ -54,6 +55,8 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
         
     }
     
+    func updateLabel(text: String) {
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return OevelseName.count
@@ -66,8 +69,7 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
         
         cell.OevelserLabel.text = OevelseName[indexPath.item]
         cell.OevelserImageView.image = OevelserImage[indexPath.item]
-         
+        
         return cell
     }
-
 }
