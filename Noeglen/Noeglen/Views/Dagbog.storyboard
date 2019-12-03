@@ -25,7 +25,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3rX-vz-8s5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.91185301539999997" green="0.98652476069999995" blue="0.98718720670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" id="Ven-rc-T1P" customClass="DiaryCell" customModule="Noeglen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
@@ -151,7 +151,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.91185301539999997" green="0.98652476069999995" blue="0.98718720670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HhX-fy-YkP" firstAttribute="trailing" secondItem="iOb-d9-sTC" secondAttribute="trailing" constant="20" id="6C6-LJ-cTC"/>
                             <constraint firstItem="iOb-d9-sTC" firstAttribute="leading" secondItem="HhX-fy-YkP" secondAttribute="leading" constant="20" id="BuG-T6-ggZ"/>
@@ -204,7 +204,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="58q-VR-CJJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="58q-VR-CJJ">
                                 <rect key="frame" x="20" y="138" width="374" height="600"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -216,10 +216,11 @@
                                 <state key="normal" title="Tilføj"/>
                                 <connections>
                                     <action selector="addDiaryButton:" destination="dr6-EC-bZb" eventType="touchUpInside" id="jJU-QF-dYA"/>
+                                    <segue destination="ptb-Bc-1fM" kind="unwind" unwindAction="unwindToDiary:" id="wpe-t5-bAz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.91185301539999997" green="0.98652476069999995" blue="0.98718720670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="58q-VR-CJJ" firstAttribute="centerX" secondItem="R1V-CZ-MEH" secondAttribute="centerX" id="1j6-le-tTE"/>
                             <constraint firstItem="7Cp-2c-mgG" firstAttribute="trailing" secondItem="Taz-vn-bft" secondAttribute="trailing" constant="20" id="727-MW-FbP"/>
@@ -244,6 +245,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyk-4j-TwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ptb-Bc-1fM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3379.7101449275365" y="890.625"/>
         </scene>
@@ -261,10 +263,10 @@
                                     <constraint firstAttribute="height" constant="44" id="CO1-XJ-ZKG"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvordan har din dag været i dag?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OL-IdH">
-                                <rect key="frame" x="36.5" y="314" width="341" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvordan har din dag været i dag? Angiv på en skala fra 0-10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OL-IdH">
+                                <rect key="frame" x="5" y="263" width="404" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="zF3-X6-f92"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="KkJ-de-gHj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -280,13 +282,18 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dr6-EC-bZb" kind="show" id="cxc-KQ-GTA"/>
+                                    <action selector="goToPopUpButton:" destination="O1E-Ae-3Sk" eventType="touchUpInside" id="0uj-va-Cl7"/>
+                                    <segue destination="GNY-XF-ari" kind="popoverPresentation" identifier="mood" popoverAnchorView="2Bo-wn-IeP" id="JYC-0G-c5H">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.91185301539999997" green="0.98652476069999995" blue="0.98718720670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cSJ-OL-IdH" secondAttribute="trailing" constant="5" id="6XT-U1-G7s"/>
                             <constraint firstItem="2Bo-wn-IeP" firstAttribute="top" secondItem="mS2-SH-pfR" secondAttribute="bottom" constant="24" id="Hd2-i7-2DL"/>
+                            <constraint firstItem="cSJ-OL-IdH" firstAttribute="leading" secondItem="LL3-yW-6nt" secondAttribute="leading" constant="5" id="Mwx-M7-2Xa"/>
                             <constraint firstItem="2Bo-wn-IeP" firstAttribute="centerX" secondItem="LL3-yW-6nt" secondAttribute="centerX" id="OLp-Ev-MJW"/>
                             <constraint firstItem="cSJ-OL-IdH" firstAttribute="centerX" secondItem="LL3-yW-6nt" secondAttribute="centerX" id="b8e-cd-8pZ"/>
                             <constraint firstItem="mS2-SH-pfR" firstAttribute="top" secondItem="cSJ-OL-IdH" secondAttribute="bottom" constant="56" id="fki-G6-lY8"/>
@@ -305,7 +312,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WU1-V4-umh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3381" y="124"/>
+            <point key="canvasLocation" x="3379.7101449275365" y="123.88392857142857"/>
+        </scene>
+        <!--Pop up controller-->
+        <scene sceneID="1Rw-fn-gGi">
+            <objects>
+                <viewController id="GNY-XF-ari" userLabel="Pop up controller" customClass="PopUpViewController" customModule="Noeglen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ES7-Ps-wCn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rR-CM-bxd">
+                                <rect key="frame" x="16" y="346" width="382" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humør tekst" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogs-I4-unP">
+                                        <rect key="frame" x="10" y="20" width="362" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpc-dy-fWh">
+                                        <rect key="frame" x="0.0" y="105" width="191" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="LJM-r6-SWW"/>
+                                        </constraints>
+                                        <state key="normal" title="Nej"/>
+                                        <connections>
+                                            <action selector="saveMoodToDiaryButton:" destination="GNY-XF-ari" eventType="touchUpInside" id="Z0t-tN-1X6"/>
+                                            <segue destination="Drx-IS-XeI" kind="unwind" unwindAction="unwindToDiary:" id="9VI-iS-MZ8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9u-GP-Py9">
+                                        <rect key="frame" x="191" y="105" width="191" height="45"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <state key="normal" title="Ja"/>
+                                        <connections>
+                                            <action selector="goToDiaryButton:" destination="GNY-XF-ari" eventType="touchUpInside" id="hIE-vs-2Jh"/>
+                                            <segue destination="dr6-EC-bZb" kind="show" identifier="writeDiary" id="BYl-eQ-Abx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="i9u-GP-Py9" firstAttribute="bottom" secondItem="Xpc-dy-fWh" secondAttribute="bottom" id="0Fp-Xs-b4l"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ogs-I4-unP" secondAttribute="trailing" constant="10" id="41C-Yr-DiX"/>
+                                    <constraint firstItem="i9u-GP-Py9" firstAttribute="height" secondItem="Xpc-dy-fWh" secondAttribute="height" id="ToU-jk-ogc"/>
+                                    <constraint firstItem="i9u-GP-Py9" firstAttribute="width" secondItem="Xpc-dy-fWh" secondAttribute="width" id="UYw-Oc-4Wb"/>
+                                    <constraint firstAttribute="height" constant="150" id="WVa-tW-4sD"/>
+                                    <constraint firstAttribute="trailing" secondItem="i9u-GP-Py9" secondAttribute="trailing" id="e5b-Bj-kiU"/>
+                                    <constraint firstItem="Ogs-I4-unP" firstAttribute="leading" secondItem="6rR-CM-bxd" secondAttribute="leading" constant="10" id="nKh-Un-hHy"/>
+                                    <constraint firstAttribute="bottom" secondItem="i9u-GP-Py9" secondAttribute="bottom" id="od4-go-dPP"/>
+                                    <constraint firstItem="i9u-GP-Py9" firstAttribute="leading" secondItem="Xpc-dy-fWh" secondAttribute="trailing" id="tMR-jP-kuY"/>
+                                    <constraint firstItem="Xpc-dy-fWh" firstAttribute="leading" secondItem="6rR-CM-bxd" secondAttribute="leading" id="xhk-E8-MfH"/>
+                                    <constraint firstItem="Ogs-I4-unP" firstAttribute="top" secondItem="6rR-CM-bxd" secondAttribute="top" constant="20" id="xyW-kC-Z8P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6rR-CM-bxd" firstAttribute="centerY" secondItem="ES7-Ps-wCn" secondAttribute="centerY" id="5E9-LW-BNB"/>
+                            <constraint firstItem="6rR-CM-bxd" firstAttribute="centerX" secondItem="ES7-Ps-wCn" secondAttribute="centerX" id="IHG-4Z-mfw"/>
+                            <constraint firstItem="Hun-x0-EGr" firstAttribute="trailing" secondItem="6rR-CM-bxd" secondAttribute="trailing" constant="16" id="gl6-NO-KWF"/>
+                            <constraint firstItem="6rR-CM-bxd" firstAttribute="leading" secondItem="Hun-x0-EGr" secondAttribute="leading" constant="16" id="uy5-Ed-0hU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hun-x0-EGr"/>
+                    </view>
+                    <connections>
+                        <outlet property="moodTextField" destination="Ogs-I4-unP" id="8Jg-hC-vRP"/>
+                        <outlet property="popUpView" destination="6rR-CM-bxd" id="c1u-NQ-S1C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEi-SP-359" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Drx-IS-XeI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4347.826086956522" y="123.88392857142857"/>
         </scene>
     </scenes>
     <resources>

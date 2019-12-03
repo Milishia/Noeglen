@@ -19,5 +19,4 @@ class DiaryCell: UITableViewCell {
         diaryDescriptionLabel.text = diary.description
         diaryDateLabel.text = diary.date
     }
-    
 }

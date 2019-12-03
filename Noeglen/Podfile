@@ -7,10 +7,9 @@ target 'Noeglen' do
 
   # Pods for Noeglen
 
-pod 'fluid-slider'
+    # Fluid-slider
+    pod 'fluid-slider'
     
-    # Webimage library
-    pod 'SDWebImage'    
     # Firebase
     pod 'Firebase/Analytics'
     pod 'Firebase/Core'
