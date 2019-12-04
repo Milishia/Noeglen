@@ -17,14 +17,15 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Sf-WT-ocE">
-                        <rect key="frame" x="8" y="0.0" width="192" height="171"/>
+                        <rect key="frame" x="8" y="10" width="192" height="171"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Ew-QC-5Xb">
                         <rect key="frame" x="8" y="181" width="192" height="25"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="s1h-VX-sQi"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -32,10 +33,10 @@
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="2Sf-WT-ocE" secondAttribute="trailing" constant="8" id="26U-yg-DQk"/>
-                <constraint firstItem="2Ew-QC-5Xb" firstAttribute="top" secondItem="2Sf-WT-ocE" secondAttribute="bottom" constant="10" id="C0H-7X-WyY"/>
+                <constraint firstItem="2Ew-QC-5Xb" firstAttribute="top" secondItem="2Sf-WT-ocE" secondAttribute="bottom" id="871-vt-B84"/>
                 <constraint firstAttribute="trailing" secondItem="2Ew-QC-5Xb" secondAttribute="trailing" constant="8" id="Hnz-PN-7do"/>
                 <constraint firstAttribute="bottom" secondItem="2Ew-QC-5Xb" secondAttribute="bottom" constant="10" id="IYT-Pj-QLu"/>
-                <constraint firstItem="2Sf-WT-ocE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NR9-Kg-AJ6"/>
+                <constraint firstItem="2Sf-WT-ocE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="K24-bH-qhK"/>
                 <constraint firstItem="2Ew-QC-5Xb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="RGy-ZV-cED"/>
                 <constraint firstItem="2Sf-WT-ocE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="rjI-5i-9kW"/>
                 <constraint firstItem="2Ew-QC-5Xb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="t99-ko-63F"/>

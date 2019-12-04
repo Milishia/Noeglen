@@ -29,7 +29,7 @@ class DiaryController: UIViewController {
         super.viewDidLoad()
         
         let db = Firestore.firestore()
-        db.collection("diaries").addSnapshotListener { (snapshot, error) in
+        db.collection("diaries").order(by: "Created", descending: true).addSnapshotListener { (snapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
             } else {

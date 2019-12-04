@@ -36,8 +36,8 @@
 		41EA169A2395729B00DD57AD /* ArticleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA16992395729B00DD57AD /* ArticleArray.swift */; };
 		41EA169C239573AD00DD57AD /* OevelseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169B239573AD00DD57AD /* OevelseArray.swift */; };
 		41EA16A12395A2BD00DD57AD /* OevelseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */; };
-		41EA16A42395AA5600DD57AD /* LikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA16A32395AA5600DD57AD /* LikeAnimator.swift */; };
 		41EA16A62395C92700DD57AD /* OevelseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EA16A52395C92600DD57AD /* OevelseCollectionViewCell.xib */; };
+		41EA16AD2397BB7600DD57AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA16AC2397BB7100DD57AD /* LoginViewController.swift */; };
 		41FE8C25236054130097488C /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C24236054130097488C /* DiaryCell.swift */; };
 		41FE8C272360553C0097488C /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C262360553C0097488C /* Diary.swift */; };
 		41FE8C2E23607C5D0097488C /* DiaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE8C2D23607C5D0097488C /* DiaryController.swift */; };
@@ -79,8 +79,8 @@
 		41EA16992395729B00DD57AD /* ArticleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleArray.swift; sourceTree = "<group>"; };
 		41EA169B239573AD00DD57AD /* OevelseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelseArray.swift; sourceTree = "<group>"; };
 		41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OevelseCollectionViewCell.swift; sourceTree = "<group>"; };
-		41EA16A32395AA5600DD57AD /* LikeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimator.swift; sourceTree = "<group>"; };
 		41EA16A52395C92600DD57AD /* OevelseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OevelseCollectionViewCell.xib; sourceTree = "<group>"; };
+		41EA16AC2397BB7100DD57AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		41FE8C24236054130097488C /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		41FE8C262360553C0097488C /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		41FE8C2D23607C5D0097488C /* DiaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryController.swift; sourceTree = "<group>"; };
@@ -112,6 +112,7 @@
 				41FE8C2D23607C5D0097488C /* DiaryController.swift */,
 				412D66E62362F02A0069F180 /* StressBarometerController.swift */,
 				412586F823900863001A6286 /* PopUpViewController.swift */,
+				41FE8C24236054130097488C /* DiaryCell.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -120,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A17018D7236194AE0093953D /* VFViewController.swift */,
+				4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A1479945238FC24C00DB1691 /* OevelserCollectionViewController.swift */,
+				41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */,
 			);
 			path = Oevelser;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				412586FD2392B5DB001A6286 /* NyttigVidenViewController.swift */,
+				412586FF2392B810001A6286 /* NyttigVidenCell.swift */,
 			);
 			path = Viden;
 			sourceTree = "<group>";
@@ -146,14 +150,10 @@
 				41A2FED8233CC613000B4CE1 /* Main.storyboard */,
 				417AF2162382F75F00D7115C /* Favorites.storyboard */,
 				417AF2182382F99E00D7115C /* NyttigViden.storyboard */,
-				412586FF2392B810001A6286 /* NyttigVidenCell.swift */,
 				417AF21A2382FA0A00D7115C /* VideoForloeb.storyboard */,
-				4108E21B2387E3D600EF88BE /* VideoCollectionViewCell.swift */,
 				4108E21C2387E3D600EF88BE /* VideoCollectionViewCell.xib */,
 				417AF21C2382FA6300D7115C /* Dagbog.storyboard */,
-				41FE8C24236054130097488C /* DiaryCell.swift */,
 				417AF21E2382FAAA00D7115C /* Oevelser.storyboard */,
-				41EA169F2395A2BD00DD57AD /* OevelseCollectionViewCell.swift */,
 				41EA16A52395C92600DD57AD /* OevelseCollectionViewCell.xib */,
 			);
 			path = Views;
@@ -170,7 +170,6 @@
 				41EA169523953E1900DD57AD /* VideoArray.swift */,
 				41EA1697239571F100DD57AD /* Oevelse.swift */,
 				41EA169B239573AD00DD57AD /* OevelseArray.swift */,
-				41EA16A32395AA5600DD57AD /* LikeAnimator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,9 +209,18 @@
 			path = Noeglen;
 			sourceTree = "<group>";
 		};
+		41EA16AB2397BB4E00DD57AD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41EA16AC2397BB7100DD57AD /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		41FE8C2A236057F50097488C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41EA16AB2397BB4E00DD57AD /* Login */,
 				412586FC2392B3AF001A6286 /* Viden */,
 				4108E21A2386D22200EF88BE /* Oevelser */,
 				4108E2192386D1FC00EF88BE /* Videos */,
@@ -395,6 +403,7 @@
 				41EA1698239571F100DD57AD /* Oevelse.swift in Sources */,
 				A17018D8236194AE0093953D /* VFViewController.swift in Sources */,
 				412587002392B810001A6286 /* NyttigVidenCell.swift in Sources */,
+				41EA16AD2397BB7600DD57AD /* LoginViewController.swift in Sources */,
 				41FE8C302360AFEE0097488C /* ShowDiaryController.swift in Sources */,
 				412586F923900863001A6286 /* PopUpViewController.swift in Sources */,
 				41EA169A2395729B00DD57AD /* ArticleArray.swift in Sources */,
@@ -404,7 +413,6 @@
 				41EA16902395324200DD57AD /* Video.swift in Sources */,
 				41EA16A12395A2BD00DD57AD /* OevelseCollectionViewCell.swift in Sources */,
 				412D66E72362F02A0069F180 /* StressBarometerController.swift in Sources */,
-				41EA16A42395AA5600DD57AD /* LikeAnimator.swift in Sources */,
 				412586FE2392B5DB001A6286 /* NyttigVidenViewController.swift in Sources */,
 				41FE8C25236054130097488C /* DiaryCell.swift in Sources */,
 			);

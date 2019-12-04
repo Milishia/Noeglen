@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -14,6 +15,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        if isLoggedIn() {
+           print("User is logged in: \(isLoggedIn())")
+        } else {
+            print("User is logged in: \(isLoggedIn())")
+            performSegue(withIdentifier: "homeToLoginSegue", sender: self)
+        }
+    }
+    
+    func isLoggedIn() -> Bool {
+        return UserDefaults.standard.bool(forKey: "isLoggedIn")
+    }
+    
+    @IBAction func signOutButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "isLoggedIn")
+        UserDefaults.standard.synchronize()
+        print("User is logged in: \(isLoggedIn())")
     }
 }
 

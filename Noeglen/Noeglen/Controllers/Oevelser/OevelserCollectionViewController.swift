@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OevelserCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class OevelserCollectionViewController: UIViewController {
     
     // MARK: - Properties
     
@@ -17,7 +17,9 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
     
     var oevelseCollectionViewFlowLayout: UICollectionViewFlowLayout!
     
-    let oevelseArray = OevelseArray()
+    let cellIdentifier = "OevelseCollectionViewCell"
+    
+    var oevelseArray = OevelseArray()
     
     // MARK: - Init
     
@@ -44,12 +46,12 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
         self.OevelserCollectionView.delegate = self
         self.OevelserCollectionView.dataSource = self
         let nib = UINib(nibName: "OevelseCollectionViewCell", bundle: nil)
-        OevelserCollectionView.register(nib, forCellWithReuseIdentifier: "OevelseCollectionViewCell")
+        OevelserCollectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
     }
     
     private func setupOevelseCollectionViewItemSize() {
         if oevelseCollectionViewFlowLayout == nil {
-            let numberOfItemPerRow: CGFloat = 2
+            let numberOfItemPerRow: CGFloat = 1
             let lineSpacing: CGFloat = 20
             let interItemSpacing: CGFloat = 8
             
@@ -67,13 +69,16 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
         OevelserCollectionView.setCollectionViewLayout(oevelseCollectionViewFlowLayout, animated: true)
         }
     }
+}
+    
+    extension OevelserCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return oevelseArray.oevelser.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OevelseCollectionViewCell", for: indexPath) as! OevelseCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! OevelseCollectionViewCell
         
         let oevelseText = oevelseArray.oevelser[indexPath.item].oevelseName
         let oevelseImage = oevelseArray.oevelser[indexPath.item].oevelseImage
@@ -82,5 +87,4 @@ class OevelserCollectionViewController: UIViewController, UICollectionViewDelega
          
         return cell
     }
-
 }

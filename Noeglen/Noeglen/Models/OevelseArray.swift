@@ -9,13 +9,13 @@
 import Foundation
 
 struct OevelseArray {
-    let oevelser: [Oevelse] = [
-        Oevelse(oevelseName: "Barnet", oevelseImage: "barnet"),
-        Oevelse(oevelseName: "Buen", oevelseImage: "buen"),
-        Oevelse(oevelseName: "Båden", oevelseImage: "baaden"),
-        Oevelse(oevelseName: "Foroverbøjning", oevelseImage: "foroverbojning"),
-        Oevelse(oevelseName: "Hund", oevelseImage: "hund"),
-        Oevelse(oevelseName: "Kokat", oevelseImage: "kokat"),
-        Oevelse(oevelseName: "Rotation", oevelseImage: "rotationer")
+    var oevelser: [Oevelse] = [
+        Oevelse(oevelseName: "Barnet", oevelseImage: "barnet", isLiked: false),
+        Oevelse(oevelseName: "Buen", oevelseImage: "buen", isLiked: false),
+        Oevelse(oevelseName: "Båden", oevelseImage: "baaden", isLiked: false),
+        Oevelse(oevelseName: "Foroverbøjning", oevelseImage: "foroverbojning", isLiked: false),
+        Oevelse(oevelseName: "Hund", oevelseImage: "hund", isLiked: false),
+        Oevelse(oevelseName: "Kokat", oevelseImage: "kokat", isLiked: false),
+        Oevelse(oevelseName: "Rotation", oevelseImage: "rotationer", isLiked: false)
     ]
 }

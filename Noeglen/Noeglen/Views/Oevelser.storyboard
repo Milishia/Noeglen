@@ -58,9 +58,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIb-5O-ii7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="LEM-b3-1WZ">
+                <tapGestureRecognizer delaysTouchesBegan="YES" numberOfTapsRequired="2" id="LEM-b3-1WZ">
                     <connections>
                         <action selector="didDoubleTap:" destination="Xcz-vi-iyG" id="1OW-pL-SKD"/>
+                        <outlet property="delegate" destination="Xcz-vi-iyG" id="4Ie-oC-dpA"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

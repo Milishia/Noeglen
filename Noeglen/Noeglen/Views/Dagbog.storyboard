@@ -75,6 +75,7 @@
                                                 <constraint firstItem="AV5-fe-phC" firstAttribute="bottom" secondItem="WaR-gV-n4d" secondAttribute="bottomMargin" id="kZb-jI-vTs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.91185301539999997" green="0.98652476069999995" blue="0.98718720670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="diaryDateLabel" destination="Zug-9Y-wlf" id="r16-zL-0oh"/>
                                             <outlet property="diaryDescriptionLabel" destination="AV5-fe-phC" id="QPE-Na-VrD"/>

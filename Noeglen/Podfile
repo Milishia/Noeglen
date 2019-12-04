@@ -14,11 +14,10 @@ target 'Noeglen' do
     pod 'Firebase/Analytics'
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
+    pod 'Firebase/Auth'
 
-    # Pods for PodTest
+    # Pods for crashlytics
     pod 'Fabric'
     pod 'Crashlytics'
-
-
 
 end

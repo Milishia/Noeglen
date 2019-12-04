@@ -11,4 +11,5 @@ import Foundation
 struct Oevelse {
     var oevelseName: String
     var oevelseImage: String
+    var isLiked: Bool
 }

@@ -17,7 +17,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sY0-ac-j7s">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.91185301539999997" green="0.98652476069999995" blue="0.98718720670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="videnCell" rowHeight="89" id="XQC-a2-GjT" customClass="NyttigVidenCell" customModule="Noeglen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="89"/>
@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjX-CE-JuL">
-                                                    <rect key="frame" x="10" y="5" width="281" height="23"/>
+                                                    <rect key="frame" x="8" y="5" width="283" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="23" id="nW1-hI-uMa"/>
                                                     </constraints>
@@ -36,7 +36,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This article is about stress and how to deal with it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifi-sN-NEj">
-                                                    <rect key="frame" x="10" y="34" width="281" height="19.5"/>
+                                                    <rect key="frame" x="8" y="34" width="283" height="19.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19.5" id="gvo-xg-bCz"/>
                                                     </constraints>
@@ -45,7 +45,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.website.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKy-gN-bdI">
-                                                    <rect key="frame" x="10" y="63" width="281" height="15"/>
+                                                    <rect key="frame" x="8" y="63" width="283" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="bJL-OC-WmI"/>
                                                     </constraints>
@@ -66,7 +66,7 @@
                                                 <constraint firstItem="VuD-CZ-3gC" firstAttribute="top" secondItem="j7f-TP-9nl" secondAttribute="top" constant="5" id="451-nU-VZu"/>
                                                 <constraint firstItem="vKy-gN-bdI" firstAttribute="leading" secondItem="qjX-CE-JuL" secondAttribute="leading" id="8b4-cX-4ge"/>
                                                 <constraint firstItem="VuD-CZ-3gC" firstAttribute="leading" secondItem="vKy-gN-bdI" secondAttribute="trailing" constant="8" id="8zJ-Rh-8uj"/>
-                                                <constraint firstItem="qjX-CE-JuL" firstAttribute="leading" secondItem="j7f-TP-9nl" secondAttribute="leading" constant="10" id="Cgi-ix-qBf"/>
+                                                <constraint firstItem="qjX-CE-JuL" firstAttribute="leading" secondItem="j7f-TP-9nl" secondAttribute="leading" constant="8" id="Cgi-ix-qBf"/>
                                                 <constraint firstItem="qjX-CE-JuL" firstAttribute="top" secondItem="j7f-TP-9nl" secondAttribute="top" constant="5" id="GLR-bT-Dv6"/>
                                                 <constraint firstItem="vKy-gN-bdI" firstAttribute="width" secondItem="qjX-CE-JuL" secondAttribute="width" id="Yzx-v4-5KM"/>
                                                 <constraint firstItem="ifi-sN-NEj" firstAttribute="width" secondItem="qjX-CE-JuL" secondAttribute="width" id="aTf-M7-Pnt"/>
@@ -78,10 +78,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="articleDescriptionLabel" destination="ifi-sN-NEj" id="iyU-xW-rg7"/>
-                                            <outlet property="articlePicture" destination="VuD-CZ-3gC" id="Exc-Nf-uTu"/>
-                                            <outlet property="articleTitleLabel" destination="qjX-CE-JuL" id="4M0-NU-9uH"/>
-                                            <outlet property="articleUrlLabel" destination="vKy-gN-bdI" id="yU2-4k-hVD"/>
+                                            <outlet property="articleDescriptionLabel" destination="ifi-sN-NEj" id="eg0-lr-bwl"/>
+                                            <outlet property="articlePicture" destination="VuD-CZ-3gC" id="3xh-yL-cHl"/>
+                                            <outlet property="articleTitleLabel" destination="qjX-CE-JuL" id="7lW-aQ-yab"/>
+                                            <outlet property="articleUrlLabel" destination="vKy-gN-bdI" id="mFv-vS-YWd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -98,7 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Nyttig viden" id="Exv-OE-zFO"/>
                     <connections>
-                        <outlet property="articleTableView" destination="sY0-ac-j7s" id="SDY-hQ-Xa6"/>
+                        <outlet property="articleTableView" destination="sY0-ac-j7s" id="H6K-9e-gEd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xg0-de-Mmv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

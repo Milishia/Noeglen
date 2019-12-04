@@ -24,7 +24,8 @@ class ListService {
             "Title": diaryTitle,
             "Description": diaryDescription,
             "Mood": diaryMood,
-            "Date": diaryDate
+            "Date": diaryDate,
+            "Created": Timestamp(date: Date())
             ]) { error in
             if let error = error {
                 print("Error adding document: \(error)")
