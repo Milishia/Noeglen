@@ -12,6 +12,7 @@ class OevelserCollectionViewController: UIViewController {
     
     // MARK: - Properties
     
+    
     @IBOutlet weak var OevelserCollectionView: UICollectionView!
     @IBOutlet var tap: UITapGestureRecognizer!
     
